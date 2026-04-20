@@ -5,6 +5,7 @@ import re
 
 START_PAGE = 2
 END_PAGE = 177
+
 TASK_NUMBER_RE = re.compile(r"^\d+\.\d+\.")
 END_STRONG_RE = re.compile(r"(Билет\s+\d+,\s*\d{4}\)|\?\s*$|\.\s*$)")
 END_WEAK_BAD_RE = re.compile(r"(рис\.\s*$|рисунок\s*$|=\s*$|,\s*$|-\s*$|:\s*$)")
@@ -162,15 +163,15 @@ def merge_tasks(pages: list[dict]) -> list[dict]:
 def main() -> None:
     project_root = Path(__file__).resolve().parents[2]
 
-    input_dir = project_root / "data" / "interim" / "tasks" / "json"
-    output_dir = project_root / "data" / "interim" / "tasks_merged"
+    input_dir = project_root / "data" / "interim" / "tasks_mistral" / "json"
+    output_dir = project_root / "data" / "interim" / "tasks_mistral_merged"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     pages = load_page_tasks(input_dir)
     merged_tasks = merge_tasks(pages)
 
-    json_path = output_dir / "tasks_merged.json"
-    jsonl_path = output_dir / "tasks_merged.jsonl"
+    json_path = output_dir / "tasks_mistral_merged.json"
+    jsonl_path = output_dir / "tasks_mistral_merged.jsonl"
     txt_dir = output_dir / "txt"
     txt_dir.mkdir(parents=True, exist_ok=True)
 

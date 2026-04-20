@@ -5,7 +5,12 @@ import re
 
 START_PAGE = 2
 END_PAGE = 177
+
 TASK_START_RE = re.compile(r"(?m)^(?P<number>\d+\.\d+)\.\s")
+FIGURE_LINE_RE = re.compile(r"(?im)^\s*!\[.*?\]\(.*?\)\s*$")
+FIGURE_CAPTION_RE = re.compile(r"(?im)^\s*Рис\.\s*\d+\.\d+.*$")
+PAGE_HEADER_RE = re.compile(r"(?im)^\s*\d+\s+[А-ЯA-ZЁ][А-ЯA-ZЁа-яa-zё\s\-]+$")
+PAGE_FOOTER_RE = re.compile(r"(?im)^\s*[А-ЯA-ZЁ][А-ЯA-ZЁа-яa-zё\s\-]+\s+\d+\s*$")
 
 
 def extract_page_number(path: Path) -> int | None:
@@ -13,6 +18,17 @@ def extract_page_number(path: Path) -> int | None:
     if not match:
         return None
     return int(match.group(1))
+
+
+def clean_mistral_text(text: str) -> str:
+    text = text.replace("\r", "\n")
+    text = FIGURE_LINE_RE.sub("", text)
+    text = FIGURE_CAPTION_RE.sub("", text)
+    text = PAGE_HEADER_RE.sub("", text)
+    text = PAGE_FOOTER_RE.sub("", text)
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 
 def split_tasks(text: str) -> list[dict]:
@@ -39,9 +55,9 @@ def split_tasks(text: str) -> list[dict]:
 def main() -> None:
     project_root = Path(__file__).resolve().parents[2]
 
-    input_dir = project_root / "data" / "interim" / "ocr_text" / "txt"
-    txt_output_dir = project_root / "data" / "interim" / "tasks" / "txt"
-    json_output_dir = project_root / "data" / "interim" / "tasks" / "json"
+    input_dir = project_root / "data" / "interim" / "ocr_mistral" / "txt"
+    txt_output_dir = project_root / "data" / "interim" / "tasks_mistral" / "txt"
+    json_output_dir = project_root / "data" / "interim" / "tasks_mistral" / "json"
 
     txt_output_dir.mkdir(parents=True, exist_ok=True)
     json_output_dir.mkdir(parents=True, exist_ok=True)
@@ -49,7 +65,7 @@ def main() -> None:
     input_paths = sorted(input_dir.glob("page_*.txt"))
 
     if not input_paths:
-        raise FileNotFoundError(f"No OCR txt files found in {input_dir}")
+        raise FileNotFoundError(f"No Mistral OCR txt files found in {input_dir}")
 
     filtered_paths = []
     for input_path in input_paths:
@@ -59,11 +75,17 @@ def main() -> None:
         if START_PAGE <= page_number <= END_PAGE:
             filtered_paths.append(input_path)
 
-    for input_path in filtered_paths:
-        text = input_path.read_text(encoding="utf-8")
-        tasks = split_tasks(text)
+    if not filtered_paths:
+        raise FileNotFoundError("No valid Mistral OCR pages in target range")
 
+    for input_path in filtered_paths:
         page_number = extract_page_number(input_path)
+        if page_number is None:
+            continue
+
+        text = input_path.read_text(encoding="utf-8")
+        cleaned_text = clean_mistral_text(text)
+        tasks = split_tasks(cleaned_text)
 
         page_json = {
             "page_number": page_number,

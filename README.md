@@ -1,9 +1,55 @@
 # olympflow-2.0
 
-Pipeline:
-1. PDF/page extraction
-2. OCR
-3. Vision metadata extraction
-4. Dataset build
-5. Embeddings
-6. Clustering
+Пайплайн для извлечения, структурирования и первичного анализа олимпиадных задач по физике из PDF-сборника.
+
+## Что уже сделано
+
+- создан новый репозиторий и базовая структура проекта;
+- исходный PDF перенесен в новый проект;
+- извлечены страницы с задачами из `phys_book.pdf` в диапазоне `2..177`;
+- протестирован локальный OCR и признан недостаточно надежным;
+- протестирован и затем использован `Mistral OCR` для полного OCR всего корпуса страниц;
+- OCR-текст разрезан на отдельные задачи;
+- выполнена склейка задач, продолжающихся на следующей странице;
+- собран финальный task-level датасет;
+- вручную проверены длинные окна задач для анализа локальной группировки;
+- построена weak-разметка по последовательным четверкам внутри разделов;
+- построен baseline на `TF-IDF + cosine similarity`.
+
+## Текущее состояние
+
+Основной рабочий датасет:
+- `data/final_mistral/dataset.jsonl`
+
+Размеченный weak-label датасет:
+- `data/final_mistral_grouped/dataset_grouped.jsonl`
+
+TF-IDF baseline:
+- `data/features/tfidf_baseline/summary.json`
+- `data/features/tfidf_baseline/neighbors.jsonl`
+- `data/features/tfidf_baseline/examples.txt`
+
+## Базовые результаты
+
+Для `TF-IDF` baseline на weak labels по четверкам получены метрики:
+
+- `Top-1 group recall ≈ 0.7005`
+- `Top-3 group recall ≈ 0.8791`
+- `Top-5 group recall ≈ 0.8984`
+
+Даже простой текстовый baseline уже хорошо восстанавливает локальную тематическую близость задач.
+
+## Структура пайплайна
+
+- `scripts/stage1_pdf/` — извлечение и подготовка страниц из PDF
+- `scripts/stage2_ocr/` — OCR, разрезание на задачи, склейка между страницами
+- `scripts/stage4_dataset/` — сборка датасета и weak-разметка
+- `scripts/stage5_embeddings/` — baseline-признаки и поиск похожих задач
+
+## Технологии
+
+- Python 3.12
+- uv
+- PyMuPDF
+- Mistral OCR API
+- scikit-learn

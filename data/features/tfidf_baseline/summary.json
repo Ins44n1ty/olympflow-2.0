@@ -1,0 +1,13 @@
+{
+  "task_count": 728,
+  "top1_group_recall": 0.700549,
+  "top3_group_recall": 0.879121,
+  "top5_group_recall": 0.898352,
+  "task_count_total": 728,
+  "vocab_size": 20334,
+  "top_k": 10,
+  "ngram_range": [
+    1,
+    2
+  ]
+}
