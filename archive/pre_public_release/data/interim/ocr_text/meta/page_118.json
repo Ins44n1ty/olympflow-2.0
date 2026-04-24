@@ -1,0 +1,10 @@
+{
+  "image_file": "page_118.png",
+  "text_file": "page_118.txt",
+  "page_number": 118,
+  "text_length": 1832,
+  "word_count_approx": 287,
+  "is_empty": false,
+  "tesseract_lang": "rus+eng",
+  "tesseract_config": "--psm 6"
+}

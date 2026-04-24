@@ -1,0 +1,22 @@
+{
+  "task_count": 728,
+  "vocab_size": 20334,
+  "ranking_metrics": {
+    "query_count": 727,
+    "precision": {
+      "precision@1": 0.701513,
+      "precision@3": 0.586887,
+      "precision@5": 0.375241,
+      "precision@10": 0.198487
+    },
+    "recall": {
+      "recall@1": 0.234296,
+      "recall@3": 0.588262,
+      "recall@5": 0.626777,
+      "recall@10": 0.662999
+    },
+    "mrr": 0.789453,
+    "map": 0.595507,
+    "lrap": 0.595507
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "task_count": 728,
+  "embedding_dim": 1024,
+  "ranking_metrics": {
+    "query_count": 727,
+    "precision": {
+      "precision@1": 0.69326,
+      "precision@3": 0.565337,
+      "precision@5": 0.370289,
+      "precision@10": 0.203301
+    },
+    "recall": {
+      "recall@1": 0.231774,
+      "recall@3": 0.566713,
+      "recall@5": 0.618524,
+      "recall@10": 0.679046
+    },
+    "mrr": 0.783012,
+    "map": 0.588709,
+    "lrap": 0.588709
+  }
+}

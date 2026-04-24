@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "АТОМНАЯ И ЯДЕРНАЯ ФИЗИКА\n\nэнергию γ-кванта. Энергия покоя ядра олова $W_0 = m_{\\pi}c^2 = 113$ ГэВ (1 ГэВ = $10^{3}$ МэВ = $10^{6}$ КэВ = $10^{9}$ эВ). При испускании и поглощении γ кванта происходит переход между одними и теми же энергетическими состояниями ядра. (Билет 8, 2002)",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 1375,
+        "width": 922
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.9805183598668161,
+        "minimum_page_confidence_score": 0.5304342278964828,
+        "word_confidence_scores": []
+      }
+    }
+  ],
+  "model": "mistral-ocr-latest",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 59549
+  },
+  "document_annotation": null
+}

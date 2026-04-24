@@ -1440,9 +1440,11 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "hdbscan" },
+    { name = "httpx" },
     { name = "jupyterlab" },
     { name = "matplotlib" },
     { name = "mistralai" },
+    { name = "numpy" },
     { name = "openai" },
     { name = "pillow" },
     { name = "polars" },
@@ -1461,9 +1463,11 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "hdbscan", specifier = ">=0.8.42" },
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "jupyterlab", specifier = ">=4.5.6" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "mistralai", specifier = ">=2.3.1" },
+    { name = "numpy", specifier = ">=2.4.4" },
     { name = "openai", specifier = ">=2.31.0" },
     { name = "pillow", specifier = ">=12.2.0" },
     { name = "polars", specifier = ">=1.39.3" },

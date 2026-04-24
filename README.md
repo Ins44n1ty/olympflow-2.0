@@ -19,15 +19,15 @@
 ## Текущее состояние
 
 Основной рабочий датасет:
-- `data/final_mistral/dataset.jsonl`
+- `data/dataset/dataset.jsonl`
 
 Размеченный weak-label датасет:
-- `data/final_mistral_grouped/dataset_grouped.jsonl`
+- `data/dataset_grouped/dataset_grouped.jsonl`
 
 TF-IDF baseline:
-- `data/features/tfidf_baseline/summary.json`
-- `data/features/tfidf_baseline/neighbors.jsonl`
-- `data/features/tfidf_baseline/examples.txt`
+- `data/features/tfidf/summary.json`
+- `data/features/tfidf/neighbors.jsonl`
+- `data/features/tfidf/examples.txt`
 
 ## Базовые результаты
 
@@ -41,10 +41,10 @@ TF-IDF baseline:
 
 ## Структура пайплайна
 
-- `scripts/stage1_pdf/` — извлечение и подготовка страниц из PDF
-- `scripts/stage2_ocr/` — OCR, разрезание на задачи, склейка между страницами
-- `scripts/stage4_dataset/` — сборка датасета и weak-разметка
-- `scripts/stage5_embeddings/` — baseline-признаки и поиск похожих задач
+- `scripts/01_pdf/` — извлечение и подготовка страниц из PDF
+- `scripts/02_ocr/` — OCR, разрезание на задачи, склейка между страницами
+- `scripts/03_dataset/` — сборка датасета и weak-разметка
+- `scripts/04_embeddings/` — baseline-признаки и поиск похожих задач
 
 ## Технологии
 

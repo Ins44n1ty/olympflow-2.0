@@ -1,0 +1,10 @@
+{
+  "model": "mistral-embed",
+  "task_count": 728,
+  "embedding_dim": 1024,
+  "batch_size": 32,
+  "max_concurrent_requests": 8,
+  "input_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/final_mistral_grouped/dataset_grouped.jsonl",
+  "embeddings_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense_mistral/embeddings.npy",
+  "records_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense_mistral/records_with_embedding_index.jsonl"
+}

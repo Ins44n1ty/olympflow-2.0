@@ -1,0 +1,18 @@
+{
+  "page_number": 92,
+  "image_file": "page_092.png",
+  "text_file": "page_092.txt",
+  "model": "mistral-ocr-latest",
+  "char_count": 2034,
+  "page_count_in_response": 1,
+  "page_confidence_scores": [
+    {
+      "index": 0,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.9812546993384225,
+        "minimum_page_confidence_score": 0.22985808913309896,
+        "word_confidence_scores": []
+      }
+    }
+  ]
+}

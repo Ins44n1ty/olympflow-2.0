@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "ОПТИКА\n\nсеивающей линзы $J_1$ на расстоянии $a = 30$ см от нее и на расстоянии $b = 1$ см от ее оптической оси.\n\n1) Найти фокусное расстояние $F_2$ собирающей линзы $J_2$.\n\n2) Определить расстояние $d$ между оптическими осями линз. Фокусное расстояние линзы $J_1$ $F_1 = -10$ см. (Билет 10, 2002)\n\n![img-0.jpeg](img-0.jpeg)\nРис. 4.73.\n\n![img-1.jpeg](img-1.jpeg)\nРис. 4.74.\n\n4.131. Оптическая система состоит из собирающей линзы $J_1$ и рассеивающей линзы $J_2$ (рис. 4.75), главные оптические оси которых параллельны и смещены друг относительно друга на расстояние $d = 1$ см. На систему со стороны собирающей линзы параллельно ее главной оптической оси падает параллельный пучок света. Найти положение фокуса $F$ такой системы:\n\n1) $x$ — расстояние от $F$ до плоскости линзы $J_2$,\n\n2) $y$ — расстояние от $F$ до главной оптической оси линзы $J_1$. Расстояние между линзами $a = 30$ см, фокусные расстояния линз $J_1$ и $J_2$ $F_1 = 10$ см и $F_2 = -10$ см. (Билет 11, 2002)\n\n![img-2.jpeg](img-2.jpeg)\nРис. 4.75.\n\n![img-3.jpeg](img-3.jpeg)\nРис. 4.76.\n\n4.132. Оптическая система состоит из рассеивающей линзы $J_1$ и собирающей линзы $J_2$, расположенных на расстоянии $L = 8$ см друг от друга (рис. 4.76). Главные оптические оси линз параллельны. Параллельный пучок света, падающий на систему параллельно оптическим",
+      "images": [
+        {
+          "id": "img-0.jpeg",
+          "top_left_x": 57,
+          "top_left_y": 239,
+          "bottom_right_x": 442,
+          "bottom_right_y": 502,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-1.jpeg",
+          "top_left_x": 475,
+          "top_left_y": 242,
+          "bottom_right_x": 856,
+          "bottom_right_y": 506,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-2.jpeg",
+          "top_left_x": 53,
+          "top_left_y": 867,
+          "bottom_right_x": 384,
+          "bottom_right_y": 1129,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-3.jpeg",
+          "top_left_x": 475,
+          "top_left_y": 867,
+          "bottom_right_x": 854,
+          "bottom_right_y": 1129,
+          "image_base64": null,
+          "image_annotation": null
+        }
+      ],
+      "dimensions": {
+        "dpi": 200,
+        "height": 1354,
+        "width": 921
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.9768831387952914,
+        "minimum_page_confidence_score": 0.2245603609177397,
+        "word_confidence_scores": []
+      }
+    }
+  ],
+  "model": "mistral-ocr-latest",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 248805
+  },
+  "document_annotation": null
+}

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "МЕХАНИКА\n\nменту удара груза с массой $m$ о стол другой груз не достиг блока, а брусок сместился на $S = 2,5$ см. На каком расстоянии от стола нахо-\n\n![img-0.jpeg](img-0.jpeg)\nРис. 1.135.\n\nдился груз с массой $m$ вначале? Массами блока и штанги пренебречь. (Билет 10, 2004)\n\n1.187. Бруски с массами $m$ и $3m$ связаны легкой нитью, перекинутой через блок, укрепленный на вершине клина с углом наклона к горизонту $\\alpha$ (cos $\\alpha = 7/9$) и массой $4m$ (рис. 1.136). Клин находит-\n\n![img-1.jpeg](img-1.jpeg)\nРис. 1.136.\n\nся на гладкой горизонтальной поверхности стола. Брусок с массой $3m$ удерживают неподвижно на расстоянии $L = 24$ см от края клина, а затем отпускают. В результате бруски и клин движутся поступательно, их скорости лежат в одной и той же вертикальной плоскости. На какое расстояние сместится клин к моменту удара бруска с массой $3m$ о стол? К моменту удара другой брусок еще не достигает блока. Массой блока пренебречь. (Билет 11, 2004)\n\n1.188. Брусок в форме прямоугольного параллелепипеда находится на гладкой горизонтальной поверхности стола. На бруске\n\n![img-2.jpeg](img-2.jpeg)\nРис. 1.137.",
+      "images": [
+        {
+          "id": "img-0.jpeg",
+          "top_left_x": 283,
+          "top_left_y": 154,
+          "bottom_right_x": 603,
+          "bottom_right_y": 368,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-1.jpeg",
+          "top_left_x": 291,
+          "top_left_y": 564,
+          "bottom_right_x": 608,
+          "bottom_right_y": 789,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-2.jpeg",
+          "top_left_x": 297,
+          "top_left_y": 1090,
+          "bottom_right_x": 616,
+          "bottom_right_y": 1304,
+          "image_base64": null,
+          "image_annotation": null
+        }
+      ],
+      "dimensions": {
+        "dpi": 200,
+        "height": 1394,
+        "width": 885
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.976168356551869,
+        "minimum_page_confidence_score": 0.1896953353688261,
+        "word_confidence_scores": []
+      }
+    }
+  ],
+  "model": "mistral-ocr-latest",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 284476
+  },
+  "document_annotation": null
+}

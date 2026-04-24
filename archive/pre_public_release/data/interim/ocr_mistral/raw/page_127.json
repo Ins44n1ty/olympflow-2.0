@@ -1,0 +1,75 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "128 ЭЛЕКТРИЧЕСТВО\n\n3.193. Вольт-амперная характеристика лампочки накаливания приведена на рис. 3.184а. Две такие лампочки $J_1$ и $J_2$ включены в схему, изображенную на рис. 3.184б. ЭДС батареи $\\mathcal{E} = 4$ В, сопротивление резистора $R = 8$ Ом. 1) Чему равно напряжение на лампочке $J_1$? 2) Что покажет амперметр $A$? Внутренним сопротивлением батареи и амперметра пренебречь. (Билет 9, 2003)\n\n![img-0.jpeg](img-0.jpeg)\nРис. 3.184.\n\n![img-1.jpeg](img-1.jpeg)\n\n3.194. Плоский воздушный конденсатор подключен к батарее с постоянной ЭДС $\\mathcal{E}$ и внутренним сопротивлением $r$. Между обкладками конденсатора вставлена проводящая пластина с зарядом $q &gt; 0$ (рис. 3.185). После установления стационарного состояния пластину с зарядом $q$ быстро удаляют из конденсатора так, что его заряд не успевает измениться. Определить величину и направление тока через батарею сразу после удаления пластины. Площадь обкладок и пластины равна $S$, расстояние между обкладками конденсатора — $d$, а расстояние между пластиной с зарядом $q$ и левой обкладкой конденсатора равно $b$ ($b &lt; d/2$). (Билет 9, 2003)\n\n3.195. Вольт-амперная характеристика лампочки накаливания приведена на рис. 3.186а. Две такие лампочки $J_1$ и $J_2$ включены в\n\n![img-2.jpeg](img-2.jpeg)\nРис. 3.185.\n\n![img-3.jpeg](img-3.jpeg)\nРис. 3.186.\n\n![img-4.jpeg](img-4.jpeg)",
+      "images": [
+        {
+          "id": "img-0.jpeg",
+          "top_left_x": 136,
+          "top_left_y": 260,
+          "bottom_right_x": 425,
+          "bottom_right_y": 543,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-1.jpeg",
+          "top_left_x": 502,
+          "top_left_y": 261,
+          "bottom_right_x": 765,
+          "bottom_right_y": 545,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-2.jpeg",
+          "top_left_x": 46,
+          "top_left_y": 652,
+          "bottom_right_x": 270,
+          "bottom_right_y": 829,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-3.jpeg",
+          "top_left_x": 132,
+          "top_left_y": 1012,
+          "bottom_right_x": 419,
+          "bottom_right_y": 1295,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-4.jpeg",
+          "top_left_x": 499,
+          "top_left_y": 1030,
+          "bottom_right_x": 759,
+          "bottom_right_y": 1300,
+          "image_base64": null,
+          "image_annotation": null
+        }
+      ],
+      "dimensions": {
+        "dpi": 200,
+        "height": 1398,
+        "width": 933
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.9702525759832012,
+        "minimum_page_confidence_score": 0.13612752407673961,
+        "word_confidence_scores": []
+      }
+    }
+  ],
+  "model": "mistral-ocr-latest",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 266727
+  },
+  "document_annotation": null
+}

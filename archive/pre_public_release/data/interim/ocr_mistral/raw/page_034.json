@@ -1,0 +1,75 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "МЕХАНИКА\n\n1.154. Пробковый шар объемом $V$ привязан ко дну конического сосуда с водой так, что нить вертикальна, а шар касается гладкой стенки сосуда (рис. 1.111). Угол между горизонтальным дном и стенкой сосуда $\\gamma$. Плотности воды и пробки $\\rho$ и $\\rho_1$. Найти силу натяжения нити в двух случаях:\n\n1) сосуд неподвижен,\n2) сосуд движется с постоянным горизонтальным ускорением $a$. (Билет 6, 2002)\n\n![img-0.jpeg](img-0.jpeg)\nРис. 1.110.\n\n![img-1.jpeg](img-1.jpeg)\nРис. 1.111.\n\n![img-2.jpeg](img-2.jpeg)\nРис. 1.112.\n\n1.155. В сосуде с водой находится алюминиевый шар объемом $V$, прикрепленный ко дну сосуда нитью $AB$ (рис. 1.112). Дно сосуда горизонтальное и гладкое. Плотность алюминия и воды $\\rho_0$ и $\\rho$. Найти силу давления шара на дно сосуда в двух случаях:\n\n1) сосуд неподвижен,\n2) сосуд движется с постоянным горизонтальным ускорением $a$, и нить составляет с дном угол $\\beta$. (Билет 7, 2002)\n\n![img-3.jpeg](img-3.jpeg)\nРис. 1.113.\n\n![img-4.jpeg](img-4.jpeg)\nРис. 1.114.\n\n1.156. В коническом сосуде с водой находится деревянный шар объемом $V$, удерживаемый от всплытия горизонтальной полкой $BD$, прикрепленной к стенке сосуда (рис. 1.113). Поверхность полки и стенки гладкие. Угол между полкой и стенкой сосуда $\\varphi$. Плотности воды и дерева $\\rho$ и $\\rho_1$. Найти силу давления шара на полку в двух случаях:",
+      "images": [
+        {
+          "id": "img-0.jpeg",
+          "top_left_x": 42,
+          "top_left_y": 303,
+          "bottom_right_x": 303,
+          "bottom_right_y": 540,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-1.jpeg",
+          "top_left_x": 312,
+          "top_left_y": 309,
+          "bottom_right_x": 553,
+          "bottom_right_y": 544,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-2.jpeg",
+          "top_left_x": 546,
+          "top_left_y": 347,
+          "bottom_right_x": 839,
+          "bottom_right_y": 543,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-3.jpeg",
+          "top_left_x": 129,
+          "top_left_y": 837,
+          "bottom_right_x": 380,
+          "bottom_right_y": 1069,
+          "image_base64": null,
+          "image_annotation": null
+        },
+        {
+          "id": "img-4.jpeg",
+          "top_left_x": 452,
+          "top_left_y": 831,
+          "bottom_right_x": 740,
+          "bottom_right_y": 1069,
+          "image_base64": null,
+          "image_annotation": null
+        }
+      ],
+      "dimensions": {
+        "dpi": 200,
+        "height": 1386,
+        "width": 902
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.9740597118830373,
+        "minimum_page_confidence_score": 0.21335803856584096,
+        "word_confidence_scores": []
+      }
+    }
+  ],
+  "model": "mistral-ocr-latest",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 287319
+  },
+  "document_annotation": null
+}

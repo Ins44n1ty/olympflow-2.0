@@ -1,0 +1,7 @@
+{
+  "model": "dense_mistral + agglomerative",
+  "task_count": 728,
+  "cluster_count": 183,
+  "largest_cluster_size": 9,
+  "smallest_cluster_size": 1
+}

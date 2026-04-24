@@ -1,0 +1,14 @@
+{
+  "page_number": 20,
+  "figure_index": 1,
+  "image_file": "page_020_figure_01.png",
+  "bbox": {
+    "x0": -352.8,
+    "y0": 0.0,
+    "x1": 352.8,
+    "y1": 546.96
+  },
+  "width": 705,
+  "height": 546,
+  "guessed_task_number": "1.102"
+}

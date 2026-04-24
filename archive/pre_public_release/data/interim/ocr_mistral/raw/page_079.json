@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "ТЕРМОДИНАМИКА\n\nскорости поршней направлены в одну сторону и равны 3v и v (рис. 2.49). В дальнейшем в некоторый момент один из поршней остановился. Полагая, что газ между поршнями все время остается равновесным, определите температуру газа в этот момент. Масса газа мала по сравнению с массой поршней. Теплопроводностью и теплоемкостью поршней и трубы пренебречь. (Билет 12, 2004)",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 1373,
+        "width": 901
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": {
+        "average_page_confidence_score": 0.9928924055186327,
+        "minimum_page_confidence_score": 0.5172778621185916,
+        "word_confidence_scores": []
+      }
+    }
+  ],
+  "model": "mistral-ocr-latest",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 93177
+  },
+  "document_annotation": null
+}

@@ -1,0 +1,10 @@
+{
+  "image_file": "page_044.png",
+  "text_file": "page_044.txt",
+  "page_number": 44,
+  "text_length": 667,
+  "word_count_approx": 112,
+  "is_empty": false,
+  "tesseract_lang": "rus+eng",
+  "tesseract_config": "--psm 6"
+}
