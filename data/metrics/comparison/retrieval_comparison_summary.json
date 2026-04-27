@@ -1,0 +1,113 @@
+{
+  "dataset_path": "data/dataset_grouped/dataset_grouped.jsonl",
+  "methods": [
+    "tfidf",
+    "dense",
+    "bm25"
+  ],
+  "common_queries_count": 728,
+  "hit_summary": {
+    "tfidf": {
+      "hit@1": 0.7005494505494505,
+      "hit@3": 0.8791208791208791,
+      "hit@5": 0.8983516483516484,
+      "hit@10": 0.9271978021978022
+    },
+    "dense": {
+      "hit@1": 0.6923076923076923,
+      "hit@3": 0.8708791208791209,
+      "hit@5": 0.8942307692307693,
+      "hit@10": 0.9326923076923077
+    },
+    "bm25": {
+      "hit@1": 0.7266483516483516,
+      "hit@3": 0.9052197802197802,
+      "hit@5": 0.9313186813186813,
+      "hit@10": 0.9505494505494505
+    }
+  },
+  "pairwise_topk_jaccard": [
+    {
+      "method_left": "tfidf",
+      "method_right": "dense",
+      "k": 1,
+      "mean_jaccard": 0.7568681318681318
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "dense",
+      "k": 3,
+      "mean_jaccard": 0.676510989010989
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "dense",
+      "k": 5,
+      "mean_jaccard": 0.4636806645735217
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "dense",
+      "k": 10,
+      "mean_jaccard": 0.3777184693984612
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "bm25",
+      "k": 1,
+      "mean_jaccard": 0.875
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "bm25",
+      "k": 3,
+      "mean_jaccard": 0.781043956043956
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "bm25",
+      "k": 5,
+      "mean_jaccard": 0.6096884266527124
+    },
+    {
+      "method_left": "tfidf",
+      "method_right": "bm25",
+      "k": 10,
+      "mean_jaccard": 0.5558506058869666
+    },
+    {
+      "method_left": "dense",
+      "method_right": "bm25",
+      "k": 1,
+      "mean_jaccard": 0.7774725274725275
+    },
+    {
+      "method_left": "dense",
+      "method_right": "bm25",
+      "k": 3,
+      "mean_jaccard": 0.6946428571428571
+    },
+    {
+      "method_left": "dense",
+      "method_right": "bm25",
+      "k": 5,
+      "mean_jaccard": 0.4925595238095238
+    },
+    {
+      "method_left": "dense",
+      "method_right": "bm25",
+      "k": 10,
+      "mean_jaccard": 0.42138145708723734
+    }
+  ],
+  "case_counts": {
+    "bm25_wins_over_dense": 37,
+    "dense_wins_over_bm25": 12,
+    "tfidf_wins_over_dense": 29,
+    "dense_wins_over_tfidf": 23,
+    "bm25_wins_over_tfidf": 25,
+    "tfidf_wins_over_bm25": 6,
+    "all_fail": 182,
+    "all_hit": 480
+  }
+}

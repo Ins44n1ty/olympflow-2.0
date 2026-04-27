@@ -1,0 +1,10 @@
+{
+  "method": "bm25",
+  "neighbors_path": "data/features/bm25/neighbors.json",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ]
+}

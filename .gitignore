@@ -11,3 +11,4 @@ data/processed/features/
 data/final/
 reports/
 .env
+.idea/

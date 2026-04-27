@@ -1,0 +1,9 @@
+{
+  "method": "bm25",
+  "input_path": "data/dataset_grouped/dataset_grouped.jsonl",
+  "records_count": 728,
+  "top_k": 10,
+  "k1": 1.5,
+  "b": 0.75,
+  "output_dir": "data/features/bm25"
+}
