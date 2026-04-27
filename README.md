@@ -2,7 +2,7 @@
 
 `olympflow-2.0` — воспроизводимый пайплайн для извлечения, структурирования и первичного анализа олимпиадных задач по физике из PDF-сборника.
 
-Проект берёт неструктурированный PDF-источник, извлекает из него текст задач, собирает датасет и строит базовые инструменты для поиска похожих задач и кластеризации. Основной фокус проекта — не только получить набор задач, но и сделать аккуратную исследовательскую инфраструктуру: данные, промежуточные артефакты, метрики, отчёты и скрипты должны быть разложены по понятным этапам.
+Проект берёт неструктурированный PDF-источник, извлекает из него текст задач, собирает датасет и строит базовые инструменты для поиска похожих задач и кластеризации. Основной фокус проекта — сделать аккуратную исследовательскую инфраструктуру: данные, промежуточные артефакты, метрики, отчёты и скрипты разложены по понятным этапам.
 
 Основной источник: `data/raw/pdf/phys_book.pdf`, страницы `2..177`.
 
@@ -19,9 +19,10 @@
 7. построение retrieval baselines;
 8. построение dense embeddings;
 9. оценка качества retrieval;
-10. кластеризация задач;
-11. анализ устойчивости кластеров;
-12. автоматическая интерпретация кластеров.
+10. сравнение retrieval-методов и error analysis;
+11. кластеризация задач;
+12. анализ устойчивости кластеров;
+13. автоматическая интерпретация кластеров.
 
 Идея проекта: построить основу для анализа корпуса олимпиадных задач по физике. После сборки датасета задачи можно сравнивать по текстовой похожести, искать близкие формулировки, группировать задачи в кластеры и анализировать повторяющиеся темы.
 
@@ -37,9 +38,11 @@
 - задачи, продолжающиеся между соседними страницами, склеены;
 - собран финальный task-level датасет;
 - собран grouped weak-labeled датасет;
-- реализованы retrieval baselines;
-- реализованы dense embeddings через асинхронные API-запросы;
+- реализованы retrieval baselines на TF-IDF и BM25;
+- реализованы dense embeddings через Mistral API и OpenAI API;
+- dense embeddings строятся через асинхронные batched API-запросы;
 - реализованы скрипты оценки retrieval;
+- реализованы скрипты сравнения retrieval-методов;
 - реализованы скрипты кластеризации;
 - добавлены отчёты по сравнению retrieval-методов;
 - добавлены отчёты по кластеризации, устойчивости и интерпретации кластеров;
@@ -69,11 +72,13 @@
 │   ├── features/
 │   │   ├── tfidf/
 │   │   ├── bm25/
-│   │   └── dense/
+│   │   ├── dense/
+│   │   └── openai_dense/
 │   ├── metrics/
 │   │   ├── tfidf/
 │   │   ├── bm25/
 │   │   ├── dense/
+│   │   ├── openai_dense/
 │   │   └── comparison/
 │   └── clusters/
 ├── docs/
@@ -137,8 +142,10 @@
 - `scripts/04_embeddings/evaluate_tfidf_baseline.py` — оценка TF-IDF retrieval.
 - `scripts/04_embeddings/build_bm25_baseline.py` — построение BM25 retrieval baseline.
 - `scripts/04_embeddings/evaluate_bm25_baseline.py` — оценка BM25 retrieval.
-- `scripts/04_embeddings/build_dense_embeddings.py` — построение dense embeddings через async batched API-запросы.
-- `scripts/04_embeddings/evaluate_dense_embeddings.py` — оценка dense retrieval.
+- `scripts/04_embeddings/build_dense_embeddings.py` — построение dense embeddings через Mistral API и async batched API-запросы.
+- `scripts/04_embeddings/evaluate_dense_embeddings.py` — оценка Mistral dense retrieval.
+- `scripts/04_embeddings/build_openai_embeddings.py` — построение OpenAI dense embeddings через async batched API-запросы.
+- `scripts/04_embeddings/evaluate_openai_embeddings.py` — оценка OpenAI dense retrieval.
 - `scripts/04_embeddings/compare_retrieval_methods.py` — сравнение retrieval-методов и сохранение error analysis.
 
 ### 5. Clustering
@@ -174,9 +181,11 @@ Retrieval features and metrics:
 - `data/features/tfidf/`
 - `data/features/bm25/`
 - `data/features/dense/`
+- `data/features/openai_dense/`
 - `data/metrics/tfidf/`
 - `data/metrics/bm25/`
 - `data/metrics/dense/`
+- `data/metrics/openai_dense/`
 - `data/metrics/comparison/`
 
 Clustering:
@@ -201,6 +210,17 @@ Reports:
 uv sync
 ```
 
+Для API-скриптов нужны переменные окружения. Можно задать их в `.env` в корне проекта:
+
+```env
+MISTRAL_API_KEY=...
+OPENAI_API_KEY=...
+OPENAI_API_BASE=https://api.openai.com
+OPENAI_USE_PROXY=false
+```
+
+`.env` не должен попадать в git.
+
 Полный запуск пайплайна:
 
 ```bash
@@ -221,6 +241,9 @@ python scripts/04_embeddings/evaluate_bm25_baseline.py
 python scripts/04_embeddings/build_dense_embeddings.py
 python scripts/04_embeddings/evaluate_dense_embeddings.py
 
+python scripts/04_embeddings/build_openai_embeddings.py
+python scripts/04_embeddings/evaluate_openai_embeddings.py
+
 python scripts/04_embeddings/compare_retrieval_methods.py
 
 python scripts/06_reports/plot_retrieval_metrics.py
@@ -239,6 +262,10 @@ python scripts/05_clustering/interpret_clusters.py
 ```bash
 python scripts/04_embeddings/build_bm25_baseline.py
 python scripts/04_embeddings/evaluate_bm25_baseline.py
+
+python scripts/04_embeddings/build_openai_embeddings.py
+python scripts/04_embeddings/evaluate_openai_embeddings.py
+
 python scripts/04_embeddings/compare_retrieval_methods.py
 python scripts/06_reports/plot_retrieval_metrics.py
 
@@ -252,16 +279,17 @@ python scripts/05_clustering/interpret_clusters.py
 
 Асинхронность используется в построении dense embeddings:
 
-- `scripts/04_embeddings/build_dense_embeddings.py`
+- `scripts/04_embeddings/build_dense_embeddings.py`;
+- `scripts/04_embeddings/build_openai_embeddings.py`.
 
-Скрипт использует:
+Скрипты используют:
 
 - `asyncio`;
 - `httpx`;
 - batched API requests;
 - ограничение числа одновременных запросов.
 
-Это нужно для более быстрого построения dense embeddings и более аккуратной работы с внешним API.
+Это нужно для более быстрого построения dense embeddings и более аккуратной работы с внешними API.
 
 ## Технологии
 
@@ -269,6 +297,7 @@ python scripts/05_clustering/interpret_clusters.py
 - uv
 - PyMuPDF
 - Mistral OCR API
+- OpenAI Embeddings API
 - asyncio
 - httpx
 - NumPy

@@ -14,44 +14,82 @@ README.md описывает архитектуру проекта и общий
 
 Weak labels построены по локальным группам задач. Это не ручная semantic gold-разметка, а pseudo-labels, которые отражают локальную тематико-лексическую близость задач внутри исходного сборника.
 
-Поэтому все метрики нужно трактовать как согласование с текущей weak-label постановкой, а не как абсолютное качество смысловой кластеризации.
+Поэтому все метрики нужно трактовать как согласование с текущей weak-label постановкой, а не как абсолютное качество смыслового поиска или смысловой кластеризации.
 
 ## Retrieval results
 
-Сравнивались три retrieval-подхода:
+Сравнивались четыре retrieval-подхода:
 
 - TF-IDF;
-- dense embeddings;
-- BM25.
+- BM25;
+- Mistral dense embeddings;
+- OpenAI dense embeddings.
 
 Итоговая таблица:
 
 | method | precision@1 | precision@3 | precision@5 | precision@10 | recall@1 | recall@3 | recall@5 | recall@10 | MRR | MAP | LRAP |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | TF-IDF | 0.701513 | 0.586887 | 0.375241 | 0.198487 | 0.234296 | 0.588262 | 0.626777 | 0.662999 | 0.789453 | 0.595507 | 0.595507 |
-| Dense | 0.693260 | 0.565337 | 0.370289 | 0.203301 | 0.231774 | 0.566713 | 0.618524 | 0.679046 | 0.783012 | 0.588709 | 0.588709 |
+| Mistral dense | 0.693260 | 0.565337 | 0.370289 | 0.203301 | 0.231774 | 0.566713 | 0.618524 | 0.679046 | 0.783012 | 0.588709 | 0.588709 |
 | BM25 | 0.726648 | 0.623626 | 0.398077 | 0.211126 | 0.332418 | 0.834478 | 0.891712 | 0.950549 | 0.815008 | 0.777160 | 0.777160 |
+| OpenAI dense | 0.663462 | 0.511905 | 0.332143 | 0.183379 | 0.221841 | 0.513278 | 0.554945 | 0.612637 | 0.740361 | 0.697736 | 0.697736 |
 
-Основной результат: BM25 стал лучшим retrieval baseline на текущей weak-label постановке.
+Основной результат: BM25 остаётся лучшим retrieval baseline на текущей weak-label постановке.
 
-Особенно заметен прирост по `recall@10`:
+Особенно заметен прирост BM25 по `recall@10`:
 
 - BM25: `0.950549`;
 - TF-IDF: `0.662999`;
-- Dense: `0.679046`.
+- Mistral dense: `0.679046`;
+- OpenAI dense: `0.612637`.
 
-Это говорит о том, что локальные weak-группы хорошо восстанавливаются через лексическое совпадение терминов, физических объектов, обозначений и шаблонов формулировок.
+OpenAI dense embeddings на модели `text-embedding-3-small` не улучшили retrieval-качество относительно Mistral dense и sparse baselines. При этом OpenAI dense показал более высокий `MAP/LRAP`, чем Mistral dense, но уступил по `precision@k`, `recall@k` и `MRR`.
+
+Это усиливает главный вывод: текущая weak-label постановка особенно хорошо согласована с lexical similarity, поэтому sparse-подходы оказываются сильнее dense-представлений.
 
 Основные файлы:
 
 - `data/metrics/tfidf/summary.json`
 - `data/metrics/dense/summary.json`
 - `data/metrics/bm25/summary.json`
+- `data/metrics/openai_dense/summary.json`
 - `reports/retrieval/retrieval_metrics_summary.md`
 - `reports/retrieval/retrieval_metrics_table.csv`
 - `reports/retrieval/precision_at_k.png`
 - `reports/retrieval/recall_at_k.png`
 - `reports/retrieval/ranking_metrics.png`
+
+## OpenAI dense baseline
+
+OpenAI dense embeddings были построены через:
+
+- `scripts/04_embeddings/build_openai_embeddings.py`;
+- `scripts/04_embeddings/evaluate_openai_embeddings.py`.
+
+Использованная модель:
+
+- `text-embedding-3-small`.
+
+Артефакты:
+
+- `data/features/openai_dense/embeddings.npy`
+- `data/features/openai_dense/meta.json`
+- `data/features/openai_dense/records_with_embedding_index.jsonl`
+- `data/features/openai_dense/neighbors.json`
+- `data/features/openai_dense/neighbors.jsonl`
+- `data/features/openai_dense/neighbors.csv`
+- `data/metrics/openai_dense/config.json`
+- `data/metrics/openai_dense/per_query_metrics.json`
+- `data/metrics/openai_dense/summary.json`
+
+Технические детали:
+
+- embeddings строятся асинхронно;
+- используется `asyncio`;
+- используется `httpx`;
+- запросы отправляются батчами;
+- число одновременных запросов ограничивается;
+- ключ и endpoint подтягиваются из `.env`.
 
 ## Retrieval comparison and error analysis
 
@@ -84,13 +122,13 @@ Weak labels построены по локальным группам задач
 
 | pair | Jaccard@1 | Jaccard@3 | Jaccard@5 | Jaccard@10 |
 |---|---:|---:|---:|---:|
-| TF-IDF vs dense | 0.756868 | 0.676511 | 0.463681 | 0.377718 |
+| TF-IDF vs Mistral dense | 0.756868 | 0.676511 | 0.463681 | 0.377718 |
 | TF-IDF vs BM25 | 0.875000 | 0.781044 | 0.609688 | 0.555851 |
-| Dense vs BM25 | 0.777473 | 0.694643 | 0.492560 | 0.421381 |
+| Mistral dense vs BM25 | 0.777473 | 0.694643 | 0.492560 | 0.421381 |
 
 Интерпретация:
 
-- TF-IDF и BM25 ближе друг к другу, чем dense к sparse-методам.
+- TF-IDF и BM25 ближе друг к другу, чем Mistral dense к sparse-методам.
 - BM25 и TF-IDF хорошо работают, когда внутри weak-группы есть почти повторяющиеся формулировки, одинаковые объекты, обозначения и физические ситуации.
 - Dense embeddings иногда возвращают физически похожие задачи из другой weak-группы. В текущем протоколе это считается ошибкой, хотя содержательно такой сосед может быть релевантным.
 - Случаи `all fail` часто показывают ограничение weak labels: найденная задача может быть очень похожей, но находиться в другой локальной группе.
@@ -211,11 +249,12 @@ Weak labels построены по локальным группам задач
 
 1. BM25 является лучшим retrieval baseline на текущей weak-label постановке.
 2. TF-IDF остаётся сильным sparse baseline и хорошо согласуется с локальной природой weak labels.
-3. Dense embeddings не превосходят sparse retrieval на текущих метриках, но дают альтернативную семантическую структуру соседства.
-4. Лучший clustering baseline сейчас — `tfidf_svd_kmeans`.
-5. Кластеризация устойчива к random seed и подвыборкам.
-6. Автоматическая интерпретация кластеров показывает, что многие кластеры имеют понятную физическую тематику.
-7. Метрики относительно weak labels нужно трактовать осторожно: weak labels являются локальными pseudo-labels, а не ручной semantic gold standard.
+3. Mistral dense embeddings не превосходят sparse retrieval, но дают альтернативную семантическую структуру соседства.
+4. OpenAI dense embeddings на `text-embedding-3-small` также не превосходят sparse retrieval и не улучшают результат относительно Mistral dense по большинству top-k метрик.
+5. Лучший clustering baseline сейчас — `tfidf_svd_kmeans`.
+6. Кластеризация устойчива к random seed и подвыборкам.
+7. Автоматическая интерпретация кластеров показывает, что многие кластеры имеют понятную физическую тематику.
+8. Метрики относительно weak labels нужно трактовать осторожно: weak labels являются локальными pseudo-labels, а не ручной semantic gold standard.
 
 ## What these results mean
 
@@ -224,5 +263,7 @@ Weak labels построены по локальным группам задач
 Это объясняет, почему sparse retrieval и sparse clustering оказались настолько сильными. Внутри локальных групп часто повторяются физические объекты, обозначения, параметры, формулировочные шаблоны и близкие постановки задач. BM25 особенно хорошо использует эту структуру.
 
 Dense embeddings остаются полезными как альтернативное семантическое представление, но текущие weak labels не всегда справедливо оценивают dense retrieval. Dense-модель может найти содержательно похожую задачу из другой локальной группы, и такая пара будет считаться ошибкой, хотя физически она может быть близкой.
+
+Эксперимент с OpenAI dense embeddings показывает, что проблема не сводится только к конкретной модели Mistral embeddings. Даже другая современная embedding-модель не дала выигрыша над sparse baseline в этой постановке.
 
 Поэтому результаты лучше трактовать не как доказательство того, что sparse-представления абсолютно лучше dense-представлений, а как доказательство того, что текущая weak-label постановка особенно хорошо согласована с lexical similarity.
