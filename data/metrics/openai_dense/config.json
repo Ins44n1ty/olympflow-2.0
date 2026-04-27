@@ -1,0 +1,13 @@
+{
+  "method": "openai_dense",
+  "dataset_path": "data/dataset_grouped/dataset_grouped.jsonl",
+  "embeddings_path": "data/features/openai_dense/embeddings.npy",
+  "embedding_records_path": "data/features/openai_dense/records_with_embedding_index.jsonl",
+  "top_k": 10,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ]
+}
