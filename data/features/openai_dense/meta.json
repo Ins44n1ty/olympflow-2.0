@@ -6,6 +6,6 @@
   "embedding_dim": 1536,
   "batch_size": 64,
   "max_concurrent_requests": 4,
-  "elapsed_seconds": 9.271,
+  "elapsed_seconds": 3.698,
   "output_dir": "data/features/openai_dense"
 }

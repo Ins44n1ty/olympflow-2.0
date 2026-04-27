@@ -1,6 +1,6 @@
 {
   "task_count": 728,
-  "vocab_size": 20334,
+  "vocab_size": 20329,
   "ranking_metrics": {
     "query_count": 727,
     "precision": {
@@ -16,7 +16,7 @@
       "recall@10": 0.662999
     },
     "mrr": 0.789453,
-    "map": 0.595507,
-    "lrap": 0.595507
+    "map": 0.595509,
+    "lrap": 0.595509
   }
 }

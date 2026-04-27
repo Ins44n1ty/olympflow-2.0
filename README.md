@@ -1,8 +1,8 @@
 # olympflow-2.0
 
-`olympflow-2.0` — воспроизводимый пайплайн для извлечения, структурирования и первичного анализа олимпиадных задач по физике из PDF-сборника.
+`olympflow-2.0` — воспроизводимый пайплайн для извлечения, структурирования, полного анализа и предсказывания временной динамики олимпиадных задач по физике из PDF-сборника Чешева 1999 года.
 
-Проект берёт неструктурированный PDF-источник, извлекает из него текст задач, собирает датасет и строит базовые инструменты для поиска похожих задач и кластеризации. Основной фокус проекта — сделать аккуратную исследовательскую инфраструктуру: данные, промежуточные артефакты, метрики, отчёты и скрипты разложены по понятным этапам.
+Проект берёт неструктурированный PDF-источник, извлекает из него текст задач, собирает датасет и строит инструменты для поиска похожих задач и кластеризации.
 
 Основной источник: `data/raw/pdf/phys_book.pdf`, страницы `2..177`.
 
@@ -24,13 +24,13 @@
 12. анализ устойчивости кластеров;
 13. автоматическая интерпретация кластеров.
 
-Идея проекта: построить основу для анализа корпуса олимпиадных задач по физике. После сборки датасета задачи можно сравнивать по текстовой похожести, искать близкие формулировки, группировать задачи в кластеры и анализировать повторяющиеся темы.
+Идея проекта: построить основу для анализа корпуса олимпиадных задач по физике. После сборки датасета задачи можно сравнивать по текстовой похожести, искать близкие формулировки, группировать задачи в кластеры и анализировать повторяющиеся темы, чтобы из года в год предсказывать тематики задач на олимпиадах.
 
 ## Текущее состояние
 
-Сейчас проект находится в состоянии аккуратной публичной версии.
+Сейчас проект находится в состоянии полной готовности к использованию.
 
-Сделано:
+Уже сделано:
 
 - исходный PDF помещён в рабочую структуру проекта;
 - страницы с задачами обработаны через OCR;
@@ -48,7 +48,7 @@
 - добавлены отчёты по кластеризации, устойчивости и интерпретации кластеров;
 - старые и экспериментальные материалы вынесены в архив.
 
-Не входит в основной рабочий пайплайн:
+Не входит в основной рабочий пайплайн (я использовал эти инструменты и методы ранее, но они оказались не очень эффективными):
 
 - локальный OCR на Tesseract;
 - извлечение и обработка рисунков из условий;
@@ -56,48 +56,6 @@
 - промежуточные экспериментальные датасеты.
 
 Эти материалы сохранены в `archive/pre_public_release/`.
-
-## Структура репозитория
-
-```text
-.
-├── README.md
-├── EXPERIMENTS.md
-├── archive/pre_public_release/
-├── configs/
-├── data/
-│   ├── raw/pdf/
-│   ├── dataset/
-│   ├── dataset_grouped/
-│   ├── features/
-│   │   ├── tfidf/
-│   │   ├── bm25/
-│   │   ├── dense/
-│   │   └── openai_dense/
-│   ├── metrics/
-│   │   ├── tfidf/
-│   │   ├── bm25/
-│   │   ├── dense/
-│   │   ├── openai_dense/
-│   │   └── comparison/
-│   └── clusters/
-├── docs/
-├── notebooks/
-├── reports/
-│   ├── retrieval/
-│   └── clustering/
-├── scripts/
-│   ├── 01_pdf/
-│   ├── 02_ocr/
-│   ├── 03_dataset/
-│   ├── 04_embeddings/
-│   ├── 05_clustering/
-│   └── 06_reports/
-├── src/olympflow/
-├── tests/
-├── pyproject.toml
-└── uv.lock
-```
 
 ## Основные каталоги
 
@@ -121,86 +79,56 @@
 
 ## Скрипты пайплайна
 
-### 1. PDF
+Скрипты проекта разбиты по этапам пайплайна.
 
-- `scripts/01_pdf/render_book_pages.py` — рендеринг страниц книги в изображения для OCR.
+### PDF и OCR
 
-### 2. OCR
+Первая часть пайплайна берёт исходный PDF, рендерит нужные страницы в изображения и прогоняет их через OCR. После этого OCR-текст приводится к более удобному виду: страницы разрезаются на отдельные задачи, а задачи, которые продолжаются на следующей странице, склеиваются обратно.
 
-- `scripts/02_ocr/run_mistral_ocr.py` — OCR страниц через Mistral OCR.
-- `scripts/02_ocr/split_pages_into_tasks.py` — разрезание page-level OCR текста на отдельные задачи.
-- `scripts/02_ocr/merge_cross_page_tasks.py` — склейка задач, продолжающихся на следующей странице.
+### Dataset
 
-### 3. Dataset
+Следующий блок собирает финальный датасет задач. В проекте есть обычный task-level датасет и grouped weak-labeled версия, которая нужна для оценки retrieval и clustering экспериментов.
 
-- `scripts/03_dataset/build_final_dataset.py` — сборка финального task-level датасета.
-- `scripts/03_dataset/build_grouped_dataset.py` — построение grouped weak-labeled версии датасета.
+### Retrieval и embeddings
 
-### 4. Retrieval and embeddings
+Этот блок строит разные представления задач и проверяет, насколько хорошо они находят похожие задачи. В проекте есть sparse baselines на TF-IDF и BM25, а также dense embeddings через Mistral API и OpenAI API. Для всех методов считаются retrieval-метрики и сохраняются ближайшие соседи задач.
 
-- `scripts/04_embeddings/build_tfidf_baseline.py` — построение TF-IDF retrieval baseline.
-- `scripts/04_embeddings/evaluate_tfidf_baseline.py` — оценка TF-IDF retrieval.
-- `scripts/04_embeddings/build_bm25_baseline.py` — построение BM25 retrieval baseline.
-- `scripts/04_embeddings/evaluate_bm25_baseline.py` — оценка BM25 retrieval.
-- `scripts/04_embeddings/build_dense_embeddings.py` — построение dense embeddings через Mistral API и async batched API-запросы.
-- `scripts/04_embeddings/evaluate_dense_embeddings.py` — оценка Mistral dense retrieval.
-- `scripts/04_embeddings/build_openai_embeddings.py` — построение OpenAI dense embeddings через async batched API-запросы.
-- `scripts/04_embeddings/evaluate_openai_embeddings.py` — оценка OpenAI dense retrieval.
-- `scripts/04_embeddings/compare_retrieval_methods.py` — сравнение retrieval-методов и сохранение error analysis.
+### Clustering
 
-### 5. Clustering
+Clustering-скрипты группируют задачи по похожести, сравнивают разные варианты кластеризации, экспортируют лучшие кластеры, проверяют их устойчивость и строят автоматическую интерпретацию через ключевые термины и representative tasks.
 
-- `scripts/05_clustering/run_clustering_baselines.py` — базовые эксперименты по TF-IDF и dense clustering.
-- `scripts/05_clustering/export_best_clusters.py` — экспорт выбранного варианта кластеров.
-- `scripts/05_clustering/run_sparse_clustering.py` — sparse clustering на TF-IDF + SVD.
-- `scripts/05_clustering/compare_clustering_results.py` — сравнение clustering baseline.
-- `scripts/05_clustering/evaluate_cluster_consistency.py` — проверка устойчивости кластеризации.
-- `scripts/05_clustering/interpret_clusters.py` — автоматическая интерпретация кластеров.
+### Reports
 
-### 6. Reports
+Report-скрипты собирают результаты экспериментов в удобный вид: таблицы, графики, comparison summaries и markdown-отчёты.
 
-- `scripts/06_reports/plot_retrieval_metrics.py` — построение таблиц и графиков retrieval-метрик.
+## Основные результаты
 
-## Основные артефакты
+Основные артефакты проекта лежат в `data/` и `reports/`.
 
-Task-level датасет:
+### Datasets
 
-- `data/dataset/dataset.jsonl`
-- `data/dataset/dataset.json`
-- `data/dataset/dataset.csv`
-- `data/dataset/dataset_summary.json`
+В `data/dataset/` лежит финальный task-level датасет.
 
-Grouped weak-labeled датасет:
+В `data/dataset_grouped/` лежит grouped weak-labeled датасет для retrieval и clustering evaluation.
 
-- `data/dataset_grouped/dataset_grouped.jsonl`
-- `data/dataset_grouped/dataset_grouped.json`
-- `data/dataset_grouped/dataset_grouped.csv`
+### Retrieval
 
-Retrieval features and metrics:
+В `data/features/` лежат признаки и retrieval-артефакты для TF-IDF, BM25, Mistral dense и OpenAI dense.
 
-- `data/features/tfidf/`
-- `data/features/bm25/`
-- `data/features/dense/`
-- `data/features/openai_dense/`
-- `data/metrics/tfidf/`
-- `data/metrics/bm25/`
-- `data/metrics/dense/`
-- `data/metrics/openai_dense/`
-- `data/metrics/comparison/`
+В `data/metrics/` лежат метрики этих методов и результаты их сравнения.
 
-Clustering:
+### Clustering
 
-- `data/clusters/clustering_summary.json`
-- `data/clusters/best_dense_agglomerative/`
-- `data/clusters/tfidf_clustering/`
-- `data/clusters/consistency/`
+В `data/clusters/` лежат результаты кластеризации: старые baseline-эксперименты, лучший dense-вариант, TF-IDF clustering, consistency analysis и интерпретация кластеров.
 
-Reports:
+### Reports
 
-- `reports/retrieval/`
-- `reports/clustering/`
+В `reports/retrieval/` лежат таблицы, графики и error analysis для retrieval.
+
+В `reports/clustering/` лежат сравнение кластеризаций, проверка устойчивости и интерпретация кластеров.
 
 Подробные численные результаты и выводы по экспериментам вынесены в `EXPERIMENTS.md`.
+
 
 ## Запуск
 
@@ -216,80 +144,38 @@ uv sync
 MISTRAL_API_KEY=...
 OPENAI_API_KEY=...
 OPENAI_API_BASE=https://api.openai.com
-OPENAI_USE_PROXY=false
+OPENAI_USE_PROXY=...
 ```
 
-`.env` не должен попадать в git.
+Основной запуск выполняется через единый скрипт run_pipeline.sh.
 
-Полный запуск пайплайна:
+Полный запуск пайплайна проекта:
 
 ```bash
-python scripts/01_pdf/render_book_pages.py
-python scripts/02_ocr/run_mistral_ocr.py
-python scripts/02_ocr/split_pages_into_tasks.py
-python scripts/02_ocr/merge_cross_page_tasks.py
-
-python scripts/03_dataset/build_final_dataset.py
-python scripts/03_dataset/build_grouped_dataset.py
-
-python scripts/04_embeddings/build_tfidf_baseline.py
-python scripts/04_embeddings/evaluate_tfidf_baseline.py
-
-python scripts/04_embeddings/build_bm25_baseline.py
-python scripts/04_embeddings/evaluate_bm25_baseline.py
-
-python scripts/04_embeddings/build_dense_embeddings.py
-python scripts/04_embeddings/evaluate_dense_embeddings.py
-
-python scripts/04_embeddings/build_openai_embeddings.py
-python scripts/04_embeddings/evaluate_openai_embeddings.py
-
-python scripts/04_embeddings/compare_retrieval_methods.py
-
-python scripts/06_reports/plot_retrieval_metrics.py
-
-python scripts/05_clustering/run_clustering_baselines.py
-python scripts/05_clustering/export_best_clusters.py
-
-python scripts/05_clustering/run_sparse_clustering.py
-python scripts/05_clustering/compare_clustering_results.py
-python scripts/05_clustering/evaluate_cluster_consistency.py
-python scripts/05_clustering/interpret_clusters.py
+./run_pipeline.sh full
 ```
 
-Быстрый пересчёт аналитической части после уже готового датасета:
+Быстрый запуск аналитической части в случае, если датасет уже готов:
 
 ```bash
-python scripts/04_embeddings/build_bm25_baseline.py
-python scripts/04_embeddings/evaluate_bm25_baseline.py
-
-python scripts/04_embeddings/build_openai_embeddings.py
-python scripts/04_embeddings/evaluate_openai_embeddings.py
-
-python scripts/04_embeddings/compare_retrieval_methods.py
-python scripts/06_reports/plot_retrieval_metrics.py
-
-python scripts/05_clustering/run_sparse_clustering.py
-python scripts/05_clustering/compare_clustering_results.py
-python scripts/05_clustering/evaluate_cluster_consistency.py
-python scripts/05_clustering/interpret_clusters.py
+./run_pipeline.sh analysis
 ```
 
 ## Async API usage
 
-Асинхронность используется в построении dense embeddings:
+Асинхронность используется в API-этапах проекта:
 
-- `scripts/04_embeddings/build_dense_embeddings.py`;
-- `scripts/04_embeddings/build_openai_embeddings.py`.
+- `scripts/02_ocr/run_mistral_ocr.py` — асинхронный OCR страниц через Mistral API;
+- `scripts/04_embeddings/build_dense_embeddings.py` — асинхронное построение dense embeddings;
+- `scripts/04_embeddings/build_openai_embeddings.py` — асинхронное построение OpenAI dense embeddings.
 
 Скрипты используют:
 
 - `asyncio`;
 - `httpx`;
 - batched API requests;
-- ограничение числа одновременных запросов.
-
-Это нужно для более быстрого построения dense embeddings и более аккуратной работы с внешними API.
+- ограничение числа одновременных запросов;
+- retry-логику для временных ошибок и rate limits.
 
 ## Технологии
 
@@ -320,3 +206,4 @@ python scripts/05_clustering/interpret_clusters.py
 - вспомогательные материалы, не вошедшие в финальный рабочий пайплайн.
 
 Эти материалы сохранены для истории проекта и воспроизводимости старых экспериментов, но не являются частью основной рабочей версии.
+

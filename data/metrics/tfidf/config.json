@@ -1,5 +1,5 @@
 {
-  "input_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/final_mistral_grouped/dataset_grouped.jsonl",
+  "input_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/dataset_grouped/dataset_grouped.jsonl",
   "k_values": [
     1,
     3,

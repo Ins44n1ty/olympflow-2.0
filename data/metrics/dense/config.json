@@ -1,6 +1,6 @@
 {
-  "records_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense_mistral/records_with_embedding_index.jsonl",
-  "embeddings_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense_mistral/embeddings.npy",
+  "records_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense/records_with_embedding_index.jsonl",
+  "embeddings_path": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense/embeddings.npy",
   "k_values": [
     1,
     3,

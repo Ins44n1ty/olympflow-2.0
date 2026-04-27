@@ -7,14 +7,14 @@
       "method": "kmeans",
       "n_clusters": 183,
       "metrics": {
-        "ari": 0.485106,
-        "nmi": 0.887302,
-        "homogeneity": 0.880353,
-        "completeness": 0.894362,
-        "v_measure": 0.887302
+        "ari": 0.522415,
+        "nmi": 0.895465,
+        "homogeneity": 0.891091,
+        "completeness": 0.899882,
+        "v_measure": 0.895465
       },
       "meta": {
-        "vocab_size": 20334,
+        "vocab_size": 20329,
         "min_df": 1,
         "max_df": 0.95,
         "ngram_range": [
@@ -35,7 +35,7 @@
         "v_measure": 0.907352
       },
       "meta": {
-        "vocab_size": 20334,
+        "vocab_size": 20329,
         "min_df": 1,
         "max_df": 0.95,
         "ngram_range": [
@@ -45,23 +45,23 @@
       }
     },
     {
-      "representation": "dense_mistral",
+      "representation": "dense",
       "method": "kmeans",
       "n_clusters": 183,
       "metrics": {
-        "ari": 0.48678,
-        "nmi": 0.889802,
-        "homogeneity": 0.881233,
-        "completeness": 0.89854,
-        "v_measure": 0.889802
+        "ari": 0.479189,
+        "nmi": 0.888946,
+        "homogeneity": 0.88098,
+        "completeness": 0.897056,
+        "v_measure": 0.888946
       },
       "meta": {
         "embedding_dim": 1024,
-        "source": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense_mistral/embeddings.npy"
+        "source": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense/embeddings.npy"
       }
     },
     {
-      "representation": "dense_mistral",
+      "representation": "dense",
       "method": "agglomerative",
       "n_clusters": 183,
       "metrics": {
@@ -73,7 +73,7 @@
       },
       "meta": {
         "embedding_dim": 1024,
-        "source": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense_mistral/embeddings.npy"
+        "source": "/Users/ins4n1ty/ft/project/olympflow-2.0/data/features/dense/embeddings.npy"
       }
     }
   ]

@@ -9147,7 +9147,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.03874
+        "similarity": 0.038759
       }
     ]
   },
@@ -17395,7 +17395,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.108166
+        "similarity": 0.108202
       },
       {
         "rank": 8,
@@ -17411,7 +17411,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.104445
+        "similarity": 0.104898
       },
       {
         "rank": 10,
@@ -17563,7 +17563,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.123646
+        "similarity": 0.123687
       },
       {
         "rank": 7,
@@ -19691,7 +19691,7 @@
         "task_number": "2.86",
         "group_id": "2_022",
         "group_pos": 2,
-        "similarity": 0.117715
+        "similarity": 0.117802
       },
       {
         "rank": 9,
@@ -19699,7 +19699,7 @@
         "task_number": "2.85",
         "group_id": "2_022",
         "group_pos": 1,
-        "similarity": 0.110869
+        "similarity": 0.110916
       },
       {
         "rank": 10,
@@ -19707,7 +19707,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.107999
+        "similarity": 0.108234
       }
     ]
   },
@@ -21139,7 +21139,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.439757
+        "similarity": 0.439902
       },
       {
         "rank": 3,
@@ -21171,7 +21171,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.123263
+        "similarity": 0.123532
       },
       {
         "rank": 7,
@@ -21179,7 +21179,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.119654
+        "similarity": 0.120173
       },
       {
         "rank": 8,
@@ -21219,7 +21219,7 @@
         "task_number": "2.55",
         "group_id": "2_014",
         "group_pos": 3,
-        "similarity": 0.55502
+        "similarity": 0.555203
       },
       {
         "rank": 2,
@@ -21227,7 +21227,7 @@
         "task_number": "2.53",
         "group_id": "2_014",
         "group_pos": 1,
-        "similarity": 0.439757
+        "similarity": 0.439902
       },
       {
         "rank": 3,
@@ -21235,7 +21235,7 @@
         "task_number": "2.56",
         "group_id": "2_014",
         "group_pos": 4,
-        "similarity": 0.263281
+        "similarity": 0.263368
       },
       {
         "rank": 4,
@@ -21243,7 +21243,7 @@
         "task_number": "2.64",
         "group_id": "2_016",
         "group_pos": 4,
-        "similarity": 0.262324
+        "similarity": 0.26241
       },
       {
         "rank": 5,
@@ -21251,7 +21251,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.24154
+        "similarity": 0.241511
       },
       {
         "rank": 6,
@@ -21259,7 +21259,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.222761
+        "similarity": 0.234944
       },
       {
         "rank": 7,
@@ -21267,7 +21267,7 @@
         "task_number": "2.96",
         "group_id": "2_024",
         "group_pos": 4,
-        "similarity": 0.125282
+        "similarity": 0.125324
       },
       {
         "rank": 8,
@@ -21275,7 +21275,7 @@
         "task_number": "2.12",
         "group_id": "2_003",
         "group_pos": 4,
-        "similarity": 0.123646
+        "similarity": 0.123687
       },
       {
         "rank": 9,
@@ -21283,7 +21283,7 @@
         "task_number": "2.93",
         "group_id": "2_024",
         "group_pos": 1,
-        "similarity": 0.117255
+        "similarity": 0.117294
       },
       {
         "rank": 10,
@@ -21291,7 +21291,7 @@
         "task_number": "2.10",
         "group_id": "2_003",
         "group_pos": 2,
-        "similarity": 0.108166
+        "similarity": 0.108202
       }
     ]
   },
@@ -21315,7 +21315,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.55502
+        "similarity": 0.555203
       },
       {
         "rank": 3,
@@ -21347,7 +21347,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.102494
+        "similarity": 0.102717
       },
       {
         "rank": 7,
@@ -21355,7 +21355,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.099493
+        "similarity": 0.099924
       },
       {
         "rank": 8,
@@ -21395,7 +21395,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.263281
+        "similarity": 0.263368
       },
       {
         "rank": 2,
@@ -21427,7 +21427,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.163672
+        "similarity": 0.164028
       },
       {
         "rank": 6,
@@ -21443,7 +21443,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.158879
+        "similarity": 0.159568
       },
       {
         "rank": 8,
@@ -21835,7 +21835,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.792949
+        "similarity": 0.837165
       },
       {
         "rank": 2,
@@ -21843,7 +21843,7 @@
         "task_number": "2.64",
         "group_id": "2_016",
         "group_pos": 4,
-        "similarity": 0.617406
+        "similarity": 0.618751
       },
       {
         "rank": 3,
@@ -21851,7 +21851,7 @@
         "task_number": "2.62",
         "group_id": "2_016",
         "group_pos": 2,
-        "similarity": 0.385744
+        "similarity": 0.386584
       },
       {
         "rank": 4,
@@ -21859,7 +21859,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.24154
+        "similarity": 0.241511
       },
       {
         "rank": 5,
@@ -21867,7 +21867,7 @@
         "task_number": "2.56",
         "group_id": "2_014",
         "group_pos": 4,
-        "similarity": 0.163672
+        "similarity": 0.164028
       },
       {
         "rank": 6,
@@ -21875,7 +21875,7 @@
         "task_number": "2.53",
         "group_id": "2_014",
         "group_pos": 1,
-        "similarity": 0.123263
+        "similarity": 0.123532
       },
       {
         "rank": 7,
@@ -21883,7 +21883,7 @@
         "task_number": "2.36",
         "group_id": "2_009",
         "group_pos": 4,
-        "similarity": 0.107999
+        "similarity": 0.108234
       },
       {
         "rank": 8,
@@ -21891,7 +21891,7 @@
         "task_number": "2.55",
         "group_id": "2_014",
         "group_pos": 3,
-        "similarity": 0.102494
+        "similarity": 0.102717
       },
       {
         "rank": 9,
@@ -21899,7 +21899,7 @@
         "task_number": "2.12",
         "group_id": "2_003",
         "group_pos": 4,
-        "similarity": 0.10095
+        "similarity": 0.10117
       },
       {
         "rank": 10,
@@ -21907,7 +21907,7 @@
         "task_number": "2.10",
         "group_id": "2_003",
         "group_pos": 2,
-        "similarity": 0.099758
+        "similarity": 0.099975
       }
     ]
   },
@@ -21931,7 +21931,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.385744
+        "similarity": 0.386584
       },
       {
         "rank": 3,
@@ -21939,7 +21939,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.332997
+        "similarity": 0.33444
       },
       {
         "rank": 4,
@@ -21987,7 +21987,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.106499
+        "similarity": 0.106534
       },
       {
         "rank": 10,
@@ -22011,7 +22011,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.792949
+        "similarity": 0.837165
       },
       {
         "rank": 2,
@@ -22019,7 +22019,7 @@
         "task_number": "2.64",
         "group_id": "2_016",
         "group_pos": 4,
-        "similarity": 0.652891
+        "similarity": 0.655721
       },
       {
         "rank": 3,
@@ -22027,7 +22027,7 @@
         "task_number": "2.62",
         "group_id": "2_016",
         "group_pos": 2,
-        "similarity": 0.332997
+        "similarity": 0.33444
       },
       {
         "rank": 4,
@@ -22035,7 +22035,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.222761
+        "similarity": 0.234944
       },
       {
         "rank": 5,
@@ -22043,7 +22043,7 @@
         "task_number": "2.56",
         "group_id": "2_014",
         "group_pos": 4,
-        "similarity": 0.158879
+        "similarity": 0.159568
       },
       {
         "rank": 6,
@@ -22051,7 +22051,7 @@
         "task_number": "2.53",
         "group_id": "2_014",
         "group_pos": 1,
-        "similarity": 0.119654
+        "similarity": 0.120173
       },
       {
         "rank": 7,
@@ -22059,7 +22059,7 @@
         "task_number": "2.10",
         "group_id": "2_003",
         "group_pos": 2,
-        "similarity": 0.104445
+        "similarity": 0.104898
       },
       {
         "rank": 8,
@@ -22067,7 +22067,7 @@
         "task_number": "2.55",
         "group_id": "2_014",
         "group_pos": 3,
-        "similarity": 0.099493
+        "similarity": 0.099924
       },
       {
         "rank": 9,
@@ -22075,7 +22075,7 @@
         "task_number": "2.12",
         "group_id": "2_003",
         "group_pos": 4,
-        "similarity": 0.097994
+        "similarity": 0.098419
       },
       {
         "rank": 10,
@@ -22083,7 +22083,7 @@
         "task_number": "2.36",
         "group_id": "2_009",
         "group_pos": 4,
-        "similarity": 0.097629
+        "similarity": 0.098052
       }
     ]
   },
@@ -22099,7 +22099,7 @@
         "task_number": "2.63",
         "group_id": "2_016",
         "group_pos": 3,
-        "similarity": 0.652891
+        "similarity": 0.655721
       },
       {
         "rank": 2,
@@ -22107,7 +22107,7 @@
         "task_number": "2.61",
         "group_id": "2_016",
         "group_pos": 1,
-        "similarity": 0.617406
+        "similarity": 0.618751
       },
       {
         "rank": 3,
@@ -22123,7 +22123,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.262324
+        "similarity": 0.26241
       },
       {
         "rank": 5,
@@ -22859,7 +22859,7 @@
         "task_number": "2.85",
         "group_id": "2_022",
         "group_pos": 1,
-        "similarity": 0.119658
+        "similarity": 0.119709
       },
       {
         "rank": 9,
@@ -23947,7 +23947,7 @@
         "task_number": "2.87",
         "group_id": "2_022",
         "group_pos": 3,
-        "similarity": 0.449097
+        "similarity": 0.448617
       },
       {
         "rank": 2,
@@ -23955,7 +23955,7 @@
         "task_number": "2.88",
         "group_id": "2_022",
         "group_pos": 4,
-        "similarity": 0.286015
+        "similarity": 0.286137
       },
       {
         "rank": 3,
@@ -23963,7 +23963,7 @@
         "task_number": "2.86",
         "group_id": "2_022",
         "group_pos": 2,
-        "similarity": 0.254874
+        "similarity": 0.25405
       },
       {
         "rank": 4,
@@ -23971,7 +23971,7 @@
         "task_number": "2.34",
         "group_id": "2_009",
         "group_pos": 2,
-        "similarity": 0.170775
+        "similarity": 0.170848
       },
       {
         "rank": 5,
@@ -23979,7 +23979,7 @@
         "task_number": "2.155",
         "group_id": "2_039",
         "group_pos": 2,
-        "similarity": 0.130961
+        "similarity": 0.131017
       },
       {
         "rank": 6,
@@ -23987,7 +23987,7 @@
         "task_number": "2.153",
         "group_id": "2_038",
         "group_pos": 4,
-        "similarity": 0.1264
+        "similarity": 0.126454
       },
       {
         "rank": 7,
@@ -23995,7 +23995,7 @@
         "task_number": "2.69",
         "group_id": "2_018",
         "group_pos": 1,
-        "similarity": 0.126305
+        "similarity": 0.126359
       },
       {
         "rank": 8,
@@ -24003,7 +24003,7 @@
         "task_number": "2.72",
         "group_id": "2_018",
         "group_pos": 4,
-        "similarity": 0.119658
+        "similarity": 0.119709
       },
       {
         "rank": 9,
@@ -24011,7 +24011,7 @@
         "task_number": "2.36",
         "group_id": "2_009",
         "group_pos": 4,
-        "similarity": 0.110869
+        "similarity": 0.110916
       },
       {
         "rank": 10,
@@ -24019,7 +24019,7 @@
         "task_number": "2.64",
         "group_id": "2_016",
         "group_pos": 4,
-        "similarity": 0.106303
+        "similarity": 0.106349
       }
     ]
   },
@@ -24035,7 +24035,7 @@
         "task_number": "2.87",
         "group_id": "2_022",
         "group_pos": 3,
-        "similarity": 0.355747
+        "similarity": 0.355025
       },
       {
         "rank": 2,
@@ -24043,7 +24043,7 @@
         "task_number": "2.85",
         "group_id": "2_022",
         "group_pos": 1,
-        "similarity": 0.254874
+        "similarity": 0.25405
       },
       {
         "rank": 3,
@@ -24051,7 +24051,7 @@
         "task_number": "2.88",
         "group_id": "2_022",
         "group_pos": 4,
-        "similarity": 0.194053
+        "similarity": 0.194195
       },
       {
         "rank": 4,
@@ -24059,7 +24059,7 @@
         "task_number": "2.126",
         "group_id": "2_032",
         "group_pos": 2,
-        "similarity": 0.120974
+        "similarity": 0.121062
       },
       {
         "rank": 5,
@@ -24067,7 +24067,7 @@
         "task_number": "2.36",
         "group_id": "2_009",
         "group_pos": 4,
-        "similarity": 0.117715
+        "similarity": 0.117802
       },
       {
         "rank": 6,
@@ -24075,7 +24075,7 @@
         "task_number": "2.34",
         "group_id": "2_009",
         "group_pos": 2,
-        "similarity": 0.103852
+        "similarity": 0.103928
       },
       {
         "rank": 7,
@@ -24083,7 +24083,7 @@
         "task_number": "2.106",
         "group_id": "2_027",
         "group_pos": 2,
-        "similarity": 0.103609
+        "similarity": 0.103685
       },
       {
         "rank": 8,
@@ -24091,7 +24091,7 @@
         "task_number": "2.108",
         "group_id": "2_027",
         "group_pos": 4,
-        "similarity": 0.102319
+        "similarity": 0.102394
       },
       {
         "rank": 9,
@@ -24099,7 +24099,7 @@
         "task_number": "2.9",
         "group_id": "2_003",
         "group_pos": 1,
-        "similarity": 0.097648
+        "similarity": 0.097719
       },
       {
         "rank": 10,
@@ -24107,7 +24107,7 @@
         "task_number": "2.125",
         "group_id": "2_032",
         "group_pos": 1,
-        "similarity": 0.096284
+        "similarity": 0.096354
       }
     ]
   },
@@ -24123,7 +24123,7 @@
         "task_number": "2.85",
         "group_id": "2_022",
         "group_pos": 1,
-        "similarity": 0.449097
+        "similarity": 0.448617
       },
       {
         "rank": 2,
@@ -24131,7 +24131,7 @@
         "task_number": "2.86",
         "group_id": "2_022",
         "group_pos": 2,
-        "similarity": 0.355747
+        "similarity": 0.355025
       },
       {
         "rank": 3,
@@ -24139,7 +24139,7 @@
         "task_number": "2.88",
         "group_id": "2_022",
         "group_pos": 4,
-        "similarity": 0.30484
+        "similarity": 0.304975
       },
       {
         "rank": 4,
@@ -24147,7 +24147,7 @@
         "task_number": "2.33",
         "group_id": "2_009",
         "group_pos": 1,
-        "similarity": 0.136674
+        "similarity": 0.136734
       },
       {
         "rank": 5,
@@ -24155,7 +24155,7 @@
         "task_number": "2.109",
         "group_id": "2_028",
         "group_pos": 1,
-        "similarity": 0.125394
+        "similarity": 0.12545
       },
       {
         "rank": 6,
@@ -24163,7 +24163,7 @@
         "task_number": "2.126",
         "group_id": "2_032",
         "group_pos": 2,
-        "similarity": 0.105902
+        "similarity": 0.105949
       },
       {
         "rank": 7,
@@ -24171,7 +24171,7 @@
         "task_number": "2.127",
         "group_id": "2_032",
         "group_pos": 3,
-        "similarity": 0.091862
+        "similarity": 0.091903
       },
       {
         "rank": 8,
@@ -24179,7 +24179,7 @@
         "task_number": "2.125",
         "group_id": "2_032",
         "group_pos": 1,
-        "similarity": 0.080234
+        "similarity": 0.080269
       },
       {
         "rank": 9,
@@ -24187,7 +24187,7 @@
         "task_number": "2.106",
         "group_id": "2_027",
         "group_pos": 2,
-        "similarity": 0.074888
+        "similarity": 0.074921
       },
       {
         "rank": 10,
@@ -24195,7 +24195,7 @@
         "task_number": "2.108",
         "group_id": "2_027",
         "group_pos": 4,
-        "similarity": 0.074774
+        "similarity": 0.074807
       }
     ]
   },
@@ -24219,7 +24219,7 @@
         "task_number": "2.87",
         "group_id": "2_022",
         "group_pos": 3,
-        "similarity": 0.30484
+        "similarity": 0.304975
       },
       {
         "rank": 3,
@@ -24227,7 +24227,7 @@
         "task_number": "2.85",
         "group_id": "2_022",
         "group_pos": 1,
-        "similarity": 0.286015
+        "similarity": 0.286137
       },
       {
         "rank": 4,
@@ -24259,7 +24259,7 @@
         "task_number": "2.86",
         "group_id": "2_022",
         "group_pos": 2,
-        "similarity": 0.194053
+        "similarity": 0.194195
       },
       {
         "rank": 8,
@@ -24723,7 +24723,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.117255
+        "similarity": 0.117294
       }
     ]
   },
@@ -24971,7 +24971,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.125282
+        "similarity": 0.125324
       },
       {
         "rank": 9,
@@ -26103,19 +26103,19 @@
       },
       {
         "rank": 7,
+        "task_id": "task_0275",
+        "task_number": "2.87",
+        "group_id": "2_022",
+        "group_pos": 3,
+        "similarity": 0.12545
+      },
+      {
+        "rank": 8,
         "task_id": "task_0308",
         "task_number": "2.120",
         "group_id": "2_030",
         "group_pos": 4,
         "similarity": 0.125441
-      },
-      {
-        "rank": 8,
-        "task_id": "task_0275",
-        "task_number": "2.87",
-        "group_id": "2_022",
-        "group_pos": 3,
-        "similarity": 0.125394
       },
       {
         "rank": 9,
@@ -27619,7 +27619,7 @@
         "task_number": "2.86",
         "group_id": "2_022",
         "group_pos": 2,
-        "similarity": 0.120974
+        "similarity": 0.121062
       },
       {
         "rank": 10,
@@ -30547,7 +30547,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.794812
+        "similarity": 0.794721
       },
       {
         "rank": 2,
@@ -30555,7 +30555,7 @@
         "task_number": "3.4",
         "group_id": "3_001",
         "group_pos": 4,
-        "similarity": 0.485939
+        "similarity": 0.485623
       },
       {
         "rank": 3,
@@ -30563,23 +30563,23 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.483152
+        "similarity": 0.482888
       },
       {
         "rank": 4,
-        "task_id": "task_0484",
-        "task_number": "3.137",
-        "group_id": "3_035",
-        "group_pos": 1,
-        "similarity": 0.226381
-      },
-      {
-        "rank": 5,
         "task_id": "task_0463",
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.225636
+        "similarity": 0.236856
+      },
+      {
+        "rank": 5,
+        "task_id": "task_0484",
+        "task_number": "3.137",
+        "group_id": "3_035",
+        "group_pos": 1,
+        "similarity": 0.226432
       },
       {
         "rank": 6,
@@ -30587,7 +30587,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.197059
+        "similarity": 0.196766
       },
       {
         "rank": 7,
@@ -30595,7 +30595,7 @@
         "task_number": "3.139",
         "group_id": "3_035",
         "group_pos": 3,
-        "similarity": 0.194863
+        "similarity": 0.194906
       },
       {
         "rank": 8,
@@ -30603,7 +30603,7 @@
         "task_number": "3.27",
         "group_id": "3_007",
         "group_pos": 3,
-        "similarity": 0.190425
+        "similarity": 0.190468
       },
       {
         "rank": 9,
@@ -30611,7 +30611,7 @@
         "task_number": "3.110",
         "group_id": "3_028",
         "group_pos": 2,
-        "similarity": 0.187274
+        "similarity": 0.187316
       },
       {
         "rank": 10,
@@ -30619,7 +30619,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.186081
+        "similarity": 0.186122
       }
     ]
   },
@@ -30635,7 +30635,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.507362
+        "similarity": 0.507114
       },
       {
         "rank": 2,
@@ -30643,7 +30643,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.483152
+        "similarity": 0.482888
       },
       {
         "rank": 3,
@@ -30651,7 +30651,7 @@
         "task_number": "3.4",
         "group_id": "3_001",
         "group_pos": 4,
-        "similarity": 0.470513
+        "similarity": 0.470117
       },
       {
         "rank": 4,
@@ -30659,7 +30659,7 @@
         "task_number": "3.137",
         "group_id": "3_035",
         "group_pos": 1,
-        "similarity": 0.25706
+        "similarity": 0.257136
       },
       {
         "rank": 5,
@@ -30667,7 +30667,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.221019
+        "similarity": 0.221085
       },
       {
         "rank": 6,
@@ -30675,7 +30675,7 @@
         "task_number": "3.117",
         "group_id": "3_030",
         "group_pos": 1,
-        "similarity": 0.219224
+        "similarity": 0.21929
       },
       {
         "rank": 7,
@@ -30683,7 +30683,7 @@
         "task_number": "3.139",
         "group_id": "3_035",
         "group_pos": 3,
-        "similarity": 0.218523
+        "similarity": 0.218588
       },
       {
         "rank": 8,
@@ -30691,7 +30691,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.208556
+        "similarity": 0.207848
       },
       {
         "rank": 9,
@@ -30699,7 +30699,7 @@
         "task_number": "3.71",
         "group_id": "3_018",
         "group_pos": 3,
-        "similarity": 0.2076
+        "similarity": 0.207662
       },
       {
         "rank": 10,
@@ -30707,7 +30707,7 @@
         "task_number": "3.140",
         "group_id": "3_035",
         "group_pos": 4,
-        "similarity": 0.206545
+        "similarity": 0.206607
       }
     ]
   },
@@ -30723,7 +30723,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.794812
+        "similarity": 0.794721
       },
       {
         "rank": 2,
@@ -30731,7 +30731,7 @@
         "task_number": "3.4",
         "group_id": "3_001",
         "group_pos": 4,
-        "similarity": 0.561475
+        "similarity": 0.561218
       },
       {
         "rank": 3,
@@ -30739,7 +30739,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.507362
+        "similarity": 0.507114
       },
       {
         "rank": 4,
@@ -30747,7 +30747,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.222819
+        "similarity": 0.233898
       },
       {
         "rank": 5,
@@ -30755,7 +30755,7 @@
         "task_number": "3.137",
         "group_id": "3_035",
         "group_pos": 1,
-        "similarity": 0.222004
+        "similarity": 0.222052
       },
       {
         "rank": 6,
@@ -30763,7 +30763,7 @@
         "task_number": "3.139",
         "group_id": "3_035",
         "group_pos": 3,
-        "similarity": 0.209105
+        "similarity": 0.20915
       },
       {
         "rank": 7,
@@ -30771,7 +30771,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.194598
+        "similarity": 0.194308
       },
       {
         "rank": 8,
@@ -30779,7 +30779,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.188151
+        "similarity": 0.188192
       },
       {
         "rank": 9,
@@ -30787,7 +30787,7 @@
         "task_number": "3.117",
         "group_id": "3_030",
         "group_pos": 1,
-        "similarity": 0.186624
+        "similarity": 0.186665
       },
       {
         "rank": 10,
@@ -30795,7 +30795,7 @@
         "task_number": "3.140",
         "group_id": "3_035",
         "group_pos": 4,
-        "similarity": 0.185211
+        "similarity": 0.185251
       }
     ]
   },
@@ -30811,7 +30811,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.561475
+        "similarity": 0.561218
       },
       {
         "rank": 2,
@@ -30819,7 +30819,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.485939
+        "similarity": 0.485623
       },
       {
         "rank": 3,
@@ -30827,47 +30827,47 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.470513
+        "similarity": 0.470117
       },
       {
         "rank": 4,
-        "task_id": "task_0459",
-        "task_number": "3.112",
-        "group_id": "3_028",
-        "group_pos": 4,
-        "similarity": 0.18018
-      },
-      {
-        "rank": 5,
-        "task_id": "task_0416",
-        "task_number": "3.69",
-        "group_id": "3_018",
-        "group_pos": 1,
-        "similarity": 0.177786
-      },
-      {
-        "rank": 6,
-        "task_id": "task_0484",
-        "task_number": "3.137",
-        "group_id": "3_035",
-        "group_pos": 1,
-        "similarity": 0.174615
-      },
-      {
-        "rank": 7,
-        "task_id": "task_0457",
-        "task_number": "3.110",
-        "group_id": "3_028",
-        "group_pos": 2,
-        "similarity": 0.172006
-      },
-      {
-        "rank": 8,
         "task_id": "task_0463",
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.164192
+        "similarity": 0.184693
+      },
+      {
+        "rank": 5,
+        "task_id": "task_0459",
+        "task_number": "3.112",
+        "group_id": "3_028",
+        "group_pos": 4,
+        "similarity": 0.179713
+      },
+      {
+        "rank": 6,
+        "task_id": "task_0416",
+        "task_number": "3.69",
+        "group_id": "3_018",
+        "group_pos": 1,
+        "similarity": 0.176805
+      },
+      {
+        "rank": 7,
+        "task_id": "task_0484",
+        "task_number": "3.137",
+        "group_id": "3_035",
+        "group_pos": 1,
+        "similarity": 0.174702
+      },
+      {
+        "rank": 8,
+        "task_id": "task_0457",
+        "task_number": "3.110",
+        "group_id": "3_028",
+        "group_pos": 2,
+        "similarity": 0.172092
       },
       {
         "rank": 9,
@@ -30875,7 +30875,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.159828
+        "similarity": 0.158827
       },
       {
         "rank": 10,
@@ -30883,7 +30883,7 @@
         "task_number": "3.139",
         "group_id": "3_035",
         "group_pos": 3,
-        "similarity": 0.154158
+        "similarity": 0.154235
       }
     ]
   },
@@ -30931,7 +30931,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.157751
+        "similarity": 0.157798
       },
       {
         "rank": 6,
@@ -30939,7 +30939,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.144939
+        "similarity": 0.144972
       },
       {
         "rank": 7,
@@ -30947,7 +30947,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.143129
+        "similarity": 0.143161
       },
       {
         "rank": 8,
@@ -31011,7 +31011,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.171381
+        "similarity": 0.171419
       },
       {
         "rank": 5,
@@ -31019,7 +31019,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.169241
+        "similarity": 0.169278
       },
       {
         "rank": 6,
@@ -31043,7 +31043,7 @@
         "task_number": "3.4",
         "group_id": "3_001",
         "group_pos": 4,
-        "similarity": 0.146676
+        "similarity": 0.146749
       },
       {
         "rank": 9,
@@ -31107,7 +31107,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.154895
+        "similarity": 0.154942
       },
       {
         "rank": 6,
@@ -31115,7 +31115,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.142315
+        "similarity": 0.142347
       },
       {
         "rank": 7,
@@ -31123,7 +31123,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.140538
+        "similarity": 0.140569
       },
       {
         "rank": 8,
@@ -31235,7 +31235,7 @@
         "task_number": "3.4",
         "group_id": "3_001",
         "group_pos": 4,
-        "similarity": 0.121821
+        "similarity": 0.121881
       }
     ]
   },
@@ -31651,7 +31651,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.094375
+        "similarity": 0.094403
       },
       {
         "rank": 8,
@@ -32891,7 +32891,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.190425
+        "similarity": 0.190468
       },
       {
         "rank": 9,
@@ -35475,7 +35475,7 @@
         "task_number": "3.61",
         "group_id": "3_016",
         "group_pos": 1,
-        "similarity": 0.898184
+        "similarity": 0.898113
       },
       {
         "rank": 2,
@@ -35483,7 +35483,7 @@
         "task_number": "3.63",
         "group_id": "3_016",
         "group_pos": 3,
-        "similarity": 0.387846
+        "similarity": 0.387982
       },
       {
         "rank": 3,
@@ -35491,7 +35491,7 @@
         "task_number": "3.59",
         "group_id": "3_015",
         "group_pos": 3,
-        "similarity": 0.380366
+        "similarity": 0.3805
       },
       {
         "rank": 4,
@@ -35499,7 +35499,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.226654
+        "similarity": 0.226237
       },
       {
         "rank": 5,
@@ -35507,7 +35507,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.223827
+        "similarity": 0.223411
       },
       {
         "rank": 6,
@@ -35515,7 +35515,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.175811
+        "similarity": 0.175337
       },
       {
         "rank": 7,
@@ -35523,7 +35523,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.170813
+        "similarity": 0.169995
       },
       {
         "rank": 8,
@@ -35531,7 +35531,7 @@
         "task_number": "3.67",
         "group_id": "3_017",
         "group_pos": 3,
-        "similarity": 0.166391
+        "similarity": 0.166449
       },
       {
         "rank": 9,
@@ -35539,7 +35539,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.163809
+        "similarity": 0.16298
       },
       {
         "rank": 10,
@@ -35547,7 +35547,7 @@
         "task_number": "3.176",
         "group_id": "3_044",
         "group_pos": 3,
-        "similarity": 0.161205
+        "similarity": 0.161262
       }
     ]
   },
@@ -35659,7 +35659,7 @@
         "task_number": "3.57",
         "group_id": "3_015",
         "group_pos": 1,
-        "similarity": 0.380366
+        "similarity": 0.3805
       },
       {
         "rank": 3,
@@ -35667,7 +35667,7 @@
         "task_number": "3.61",
         "group_id": "3_016",
         "group_pos": 1,
-        "similarity": 0.374977
+        "similarity": 0.375105
       },
       {
         "rank": 4,
@@ -35691,7 +35691,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.198411
+        "similarity": 0.198551
       },
       {
         "rank": 7,
@@ -35715,7 +35715,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.195936
+        "similarity": 0.196071
       },
       {
         "rank": 10,
@@ -35827,7 +35827,7 @@
         "task_number": "3.57",
         "group_id": "3_015",
         "group_pos": 1,
-        "similarity": 0.898184
+        "similarity": 0.898113
       },
       {
         "rank": 2,
@@ -35835,7 +35835,7 @@
         "task_number": "3.63",
         "group_id": "3_016",
         "group_pos": 3,
-        "similarity": 0.382351
+        "similarity": 0.382481
       },
       {
         "rank": 3,
@@ -35843,7 +35843,7 @@
         "task_number": "3.59",
         "group_id": "3_015",
         "group_pos": 3,
-        "similarity": 0.374977
+        "similarity": 0.375105
       },
       {
         "rank": 4,
@@ -35851,7 +35851,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.223443
+        "similarity": 0.223029
       },
       {
         "rank": 5,
@@ -35859,7 +35859,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.220656
+        "similarity": 0.220244
       },
       {
         "rank": 6,
@@ -35867,7 +35867,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.17332
+        "similarity": 0.172851
       },
       {
         "rank": 7,
@@ -35875,7 +35875,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.168393
+        "similarity": 0.167585
       },
       {
         "rank": 8,
@@ -35883,7 +35883,7 @@
         "task_number": "3.67",
         "group_id": "3_017",
         "group_pos": 3,
-        "similarity": 0.164033
+        "similarity": 0.164089
       },
       {
         "rank": 9,
@@ -35891,7 +35891,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.161488
+        "similarity": 0.160669
       },
       {
         "rank": 10,
@@ -35899,7 +35899,7 @@
         "task_number": "3.176",
         "group_id": "3_044",
         "group_pos": 3,
-        "similarity": 0.158921
+        "similarity": 0.158975
       }
     ]
   },
@@ -36011,7 +36011,7 @@
         "task_number": "3.57",
         "group_id": "3_015",
         "group_pos": 1,
-        "similarity": 0.387846
+        "similarity": 0.387982
       },
       {
         "rank": 3,
@@ -36019,7 +36019,7 @@
         "task_number": "3.61",
         "group_id": "3_016",
         "group_pos": 1,
-        "similarity": 0.382351
+        "similarity": 0.382481
       },
       {
         "rank": 4,
@@ -36059,7 +36059,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.208506
+        "similarity": 0.208654
       },
       {
         "rank": 9,
@@ -36067,7 +36067,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.205905
+        "similarity": 0.206048
       },
       {
         "rank": 10,
@@ -36147,7 +36147,7 @@
         "task_number": "2.54",
         "group_id": "2_014",
         "group_pos": 2,
-        "similarity": 0.056078
+        "similarity": 0.056096
       },
       {
         "rank": 9,
@@ -36179,7 +36179,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.83976
+        "similarity": 0.839496
       },
       {
         "rank": 2,
@@ -36187,7 +36187,7 @@
         "task_number": "3.67",
         "group_id": "3_017",
         "group_pos": 3,
-        "similarity": 0.455933
+        "similarity": 0.456307
       },
       {
         "rank": 3,
@@ -36195,7 +36195,7 @@
         "task_number": "3.71",
         "group_id": "3_018",
         "group_pos": 3,
-        "similarity": 0.405969
+        "similarity": 0.406303
       },
       {
         "rank": 4,
@@ -36203,7 +36203,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.249748
+        "similarity": 0.249953
       },
       {
         "rank": 5,
@@ -36211,7 +36211,7 @@
         "task_number": "3.117",
         "group_id": "3_030",
         "group_pos": 1,
-        "similarity": 0.24772
+        "similarity": 0.247924
       },
       {
         "rank": 6,
@@ -36219,7 +36219,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.23465
+        "similarity": 0.233865
       },
       {
         "rank": 7,
@@ -36227,7 +36227,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.209235
+        "similarity": 0.208597
       },
       {
         "rank": 8,
@@ -36235,7 +36235,7 @@
         "task_number": "3.123",
         "group_id": "3_031",
         "group_pos": 3,
-        "similarity": 0.189959
+        "similarity": 0.190115
       },
       {
         "rank": 9,
@@ -36243,7 +36243,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.189817
+        "similarity": 0.189161
       },
       {
         "rank": 10,
@@ -36251,7 +36251,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.18862
+        "similarity": 0.187892
       }
     ]
   },
@@ -36363,7 +36363,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.472696
+        "similarity": 0.473087
       },
       {
         "rank": 3,
@@ -36371,7 +36371,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.455933
+        "similarity": 0.456307
       },
       {
         "rank": 4,
@@ -36419,7 +36419,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.241485
+        "similarity": 0.24179
       },
       {
         "rank": 10,
@@ -36531,7 +36531,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.83976
+        "similarity": 0.839496
       },
       {
         "rank": 2,
@@ -36539,7 +36539,7 @@
         "task_number": "3.67",
         "group_id": "3_017",
         "group_pos": 3,
-        "similarity": 0.472696
+        "similarity": 0.473087
       },
       {
         "rank": 3,
@@ -36547,7 +36547,7 @@
         "task_number": "3.71",
         "group_id": "3_018",
         "group_pos": 3,
-        "similarity": 0.446326
+        "similarity": 0.446695
       },
       {
         "rank": 4,
@@ -36555,7 +36555,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.256457
+        "similarity": 0.256669
       },
       {
         "rank": 5,
@@ -36563,7 +36563,7 @@
         "task_number": "3.117",
         "group_id": "3_030",
         "group_pos": 1,
-        "similarity": 0.254375
+        "similarity": 0.254585
       },
       {
         "rank": 6,
@@ -36571,7 +36571,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.235521
+        "similarity": 0.234735
       },
       {
         "rank": 7,
@@ -36579,7 +36579,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.210012
+        "similarity": 0.209373
       },
       {
         "rank": 8,
@@ -36587,7 +36587,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.208556
+        "similarity": 0.207848
       },
       {
         "rank": 9,
@@ -36595,7 +36595,7 @@
         "task_number": "3.159",
         "group_id": "3_040",
         "group_pos": 2,
-        "similarity": 0.191788
+        "similarity": 0.191947
       },
       {
         "rank": 10,
@@ -36603,7 +36603,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.191501
+        "similarity": 0.190837
       }
     ]
   },
@@ -36715,7 +36715,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.446326
+        "similarity": 0.446695
       },
       {
         "rank": 3,
@@ -36723,7 +36723,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.405969
+        "similarity": 0.406303
       },
       {
         "rank": 4,
@@ -37091,7 +37091,7 @@
         "task_number": "3.57",
         "group_id": "3_015",
         "group_pos": 1,
-        "similarity": 0.065109
+        "similarity": 0.065132
       },
       {
         "rank": 6,
@@ -37107,7 +37107,7 @@
         "task_number": "3.61",
         "group_id": "3_016",
         "group_pos": 1,
-        "similarity": 0.064186
+        "similarity": 0.064208
       },
       {
         "rank": 8,
@@ -37291,7 +37291,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.228571
+        "similarity": 0.22868
       },
       {
         "rank": 9,
@@ -37299,7 +37299,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.228044
+        "similarity": 0.228205
       },
       {
         "rank": 10,
@@ -37531,7 +37531,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.17776
+        "similarity": 0.177888
       },
       {
         "rank": 6,
@@ -37539,7 +37539,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.172856
+        "similarity": 0.172939
       },
       {
         "rank": 7,
@@ -37659,7 +37659,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.068021
+        "similarity": 0.068069
       }
     ]
   },
@@ -37699,7 +37699,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.105754
+        "similarity": 0.105829
       },
       {
         "rank": 5,
@@ -37707,7 +37707,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.104435
+        "similarity": 0.104507
       },
       {
         "rank": 6,
@@ -37835,7 +37835,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.069107
+        "similarity": 0.069156
       }
     ]
   },
@@ -37883,7 +37883,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.108598
+        "similarity": 0.108675
       },
       {
         "rank": 6,
@@ -37891,7 +37891,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.107244
+        "similarity": 0.107318
       },
       {
         "rank": 7,
@@ -37907,7 +37907,7 @@
         "task_number": "3.57",
         "group_id": "3_015",
         "group_pos": 1,
-        "similarity": 0.098743
+        "similarity": 0.098778
       },
       {
         "rank": 9,
@@ -37915,7 +37915,7 @@
         "task_number": "3.61",
         "group_id": "3_016",
         "group_pos": 1,
-        "similarity": 0.097344
+        "similarity": 0.097377
       },
       {
         "rank": 10,
@@ -38139,7 +38139,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.132396
+        "similarity": 0.13246
       },
       {
         "rank": 5,
@@ -38155,7 +38155,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.118871
+        "similarity": 0.118897
       },
       {
         "rank": 7,
@@ -38171,7 +38171,7 @@
         "task_number": "3.1",
         "group_id": "3_001",
         "group_pos": 1,
-        "similarity": 0.107691
+        "similarity": 0.107715
       },
       {
         "rank": 9,
@@ -38179,7 +38179,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.105556
+        "similarity": 0.10641
       },
       {
         "rank": 10,
@@ -38491,7 +38491,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.302644
+        "similarity": 0.302858
       },
       {
         "rank": 5,
@@ -38499,7 +38499,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.266523
+        "similarity": 0.266707
       },
       {
         "rank": 6,
@@ -38507,7 +38507,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.261499
+        "similarity": 0.261686
       },
       {
         "rank": 7,
@@ -38515,7 +38515,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.164474
+        "similarity": 0.164552
       },
       {
         "rank": 8,
@@ -39355,7 +39355,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.166209
+        "similarity": 0.166259
       },
       {
         "rank": 3,
@@ -39595,7 +39595,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.058593
+        "similarity": 0.059067
       }
     ]
   },
@@ -39699,7 +39699,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.851171
+        "similarity": 0.850963
       },
       {
         "rank": 2,
@@ -39707,7 +39707,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.819997
+        "similarity": 0.819741
       },
       {
         "rank": 3,
@@ -39715,7 +39715,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.48723
+        "similarity": 0.486298
       },
       {
         "rank": 4,
@@ -39723,7 +39723,7 @@
         "task_number": "3.125",
         "group_id": "3_032",
         "group_pos": 1,
-        "similarity": 0.326452
+        "similarity": 0.326683
       },
       {
         "rank": 5,
@@ -39731,7 +39731,7 @@
         "task_number": "3.91",
         "group_id": "3_023",
         "group_pos": 3,
-        "similarity": 0.302644
+        "similarity": 0.302858
       },
       {
         "rank": 6,
@@ -39739,7 +39739,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.278108
+        "similarity": 0.277272
       },
       {
         "rank": 7,
@@ -39747,7 +39747,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.232325
+        "similarity": 0.262191
       },
       {
         "rank": 8,
@@ -39755,7 +39755,7 @@
         "task_number": "3.146",
         "group_id": "3_037",
         "group_pos": 1,
-        "similarity": 0.23041
+        "similarity": 0.230573
       },
       {
         "rank": 9,
@@ -39763,7 +39763,7 @@
         "task_number": "3.201",
         "group_id": "3_050",
         "group_pos": 4,
-        "similarity": 0.22922
+        "similarity": 0.229383
       },
       {
         "rank": 10,
@@ -39771,7 +39771,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.22884
+        "similarity": 0.229003
       }
     ]
   },
@@ -39787,7 +39787,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.622328
+        "similarity": 0.621658
       },
       {
         "rank": 2,
@@ -39795,7 +39795,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.48723
+        "similarity": 0.486298
       },
       {
         "rank": 3,
@@ -39803,7 +39803,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.42414
+        "similarity": 0.4231
       },
       {
         "rank": 4,
@@ -39811,7 +39811,7 @@
         "task_number": "3.67",
         "group_id": "3_017",
         "group_pos": 3,
-        "similarity": 0.241485
+        "similarity": 0.24179
       },
       {
         "rank": 5,
@@ -39819,7 +39819,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.235521
+        "similarity": 0.234735
       },
       {
         "rank": 6,
@@ -39827,39 +39827,39 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.23465
+        "similarity": 0.233865
       },
       {
         "rank": 7,
+        "task_id": "task_0463",
+        "task_number": "3.116",
+        "group_id": "3_029",
+        "group_pos": 4,
+        "similarity": 0.221316
+      },
+      {
+        "rank": 8,
         "task_id": "task_0459",
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.215336
+        "similarity": 0.214156
       },
       {
-        "rank": 8,
+        "rank": 9,
         "task_id": "task_0539",
         "task_number": "3.192",
         "group_id": "3_048",
         "group_pos": 3,
-        "similarity": 0.207937
+        "similarity": 0.208199
       },
       {
-        "rank": 9,
+        "rank": 10,
         "task_id": "task_0548",
         "task_number": "3.201",
         "group_id": "3_050",
         "group_pos": 4,
-        "similarity": 0.197257
-      },
-      {
-        "rank": 10,
-        "task_id": "task_0491",
-        "task_number": "3.144",
-        "group_id": "3_036",
-        "group_pos": 3,
-        "similarity": 0.178258
+        "similarity": 0.197505
       }
     ]
   },
@@ -39875,7 +39875,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.851171
+        "similarity": 0.850963
       },
       {
         "rank": 2,
@@ -39883,7 +39883,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.817369
+        "similarity": 0.817112
       },
       {
         "rank": 3,
@@ -39891,7 +39891,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.42414
+        "similarity": 0.4231
       },
       {
         "rank": 4,
@@ -39899,7 +39899,7 @@
         "task_number": "3.125",
         "group_id": "3_032",
         "group_pos": 1,
-        "similarity": 0.30539
+        "similarity": 0.305601
       },
       {
         "rank": 5,
@@ -39907,7 +39907,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.274639
+        "similarity": 0.273809
       },
       {
         "rank": 6,
@@ -39915,7 +39915,7 @@
         "task_number": "3.91",
         "group_id": "3_023",
         "group_pos": 3,
-        "similarity": 0.266523
+        "similarity": 0.266707
       },
       {
         "rank": 7,
@@ -39923,7 +39923,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.229427
+        "similarity": 0.258916
       },
       {
         "rank": 8,
@@ -39931,7 +39931,7 @@
         "task_number": "3.57",
         "group_id": "3_015",
         "group_pos": 1,
-        "similarity": 0.223827
+        "similarity": 0.223411
       },
       {
         "rank": 9,
@@ -39939,15 +39939,15 @@
         "task_number": "3.144",
         "group_id": "3_036",
         "group_pos": 3,
-        "similarity": 0.223056
+        "similarity": 0.223211
       },
       {
         "rank": 10,
-        "task_id": "task_0408",
-        "task_number": "3.61",
-        "group_id": "3_016",
-        "group_pos": 1,
-        "similarity": 0.220656
+        "task_id": "task_0466",
+        "task_number": "3.119",
+        "group_id": "3_030",
+        "group_pos": 3,
+        "similarity": 0.220626
       }
     ]
   },
@@ -39963,7 +39963,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.819997
+        "similarity": 0.819741
       },
       {
         "rank": 2,
@@ -39971,7 +39971,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.817369
+        "similarity": 0.817112
       },
       {
         "rank": 3,
@@ -39979,7 +39979,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.622328
+        "similarity": 0.621658
       },
       {
         "rank": 4,
@@ -39987,7 +39987,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.275006
+        "similarity": 0.274163
       },
       {
         "rank": 5,
@@ -39995,7 +39995,7 @@
         "task_number": "3.125",
         "group_id": "3_032",
         "group_pos": 1,
-        "similarity": 0.266937
+        "similarity": 0.267128
       },
       {
         "rank": 6,
@@ -40003,31 +40003,31 @@
         "task_number": "3.91",
         "group_id": "3_023",
         "group_pos": 3,
-        "similarity": 0.261499
+        "similarity": 0.261686
       },
       {
         "rank": 7,
-        "task_id": "task_0466",
-        "task_number": "3.119",
-        "group_id": "3_030",
-        "group_pos": 3,
-        "similarity": 0.239699
-      },
-      {
-        "rank": 8,
-        "task_id": "task_0464",
-        "task_number": "3.117",
-        "group_id": "3_030",
-        "group_pos": 1,
-        "similarity": 0.237753
-      },
-      {
-        "rank": 9,
         "task_id": "task_0463",
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.215492
+        "similarity": 0.245336
+      },
+      {
+        "rank": 8,
+        "task_id": "task_0466",
+        "task_number": "3.119",
+        "group_id": "3_030",
+        "group_pos": 3,
+        "similarity": 0.23987
+      },
+      {
+        "rank": 9,
+        "task_id": "task_0464",
+        "task_number": "3.117",
+        "group_id": "3_030",
+        "group_pos": 1,
+        "similarity": 0.237923
       },
       {
         "rank": 10,
@@ -40035,7 +40035,7 @@
         "task_number": "3.67",
         "group_id": "3_017",
         "group_pos": 3,
-        "similarity": 0.213172
+        "similarity": 0.213325
       }
     ]
   },
@@ -40147,7 +40147,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.36949
+        "similarity": 0.369667
       },
       {
         "rank": 3,
@@ -40155,7 +40155,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.293421
+        "similarity": 0.290622
       },
       {
         "rank": 4,
@@ -40315,7 +40315,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.607141
+        "similarity": 0.631859
       },
       {
         "rank": 2,
@@ -40323,7 +40323,7 @@
         "task_number": "3.114",
         "group_id": "3_029",
         "group_pos": 2,
-        "similarity": 0.40994
+        "similarity": 0.410136
       },
       {
         "rank": 3,
@@ -40331,7 +40331,7 @@
         "task_number": "3.110",
         "group_id": "3_028",
         "group_pos": 2,
-        "similarity": 0.36949
+        "similarity": 0.369667
       },
       {
         "rank": 4,
@@ -40339,7 +40339,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.278108
+        "similarity": 0.277272
       },
       {
         "rank": 5,
@@ -40347,7 +40347,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.275006
+        "similarity": 0.274163
       },
       {
         "rank": 6,
@@ -40355,7 +40355,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.274639
+        "similarity": 0.273809
       },
       {
         "rank": 7,
@@ -40363,7 +40363,7 @@
         "task_number": "3.77",
         "group_id": "3_020",
         "group_pos": 1,
-        "similarity": 0.228571
+        "similarity": 0.22868
       },
       {
         "rank": 8,
@@ -40371,7 +40371,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.215336
+        "similarity": 0.214156
       },
       {
         "rank": 9,
@@ -40379,7 +40379,7 @@
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
-        "similarity": 0.204588
+        "similarity": 0.204686
       },
       {
         "rank": 10,
@@ -40387,7 +40387,7 @@
         "task_number": "3.117",
         "group_id": "3_030",
         "group_pos": 1,
-        "similarity": 0.202927
+        "similarity": 0.203024
       }
     ]
   },
@@ -40499,7 +40499,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.40994
+        "similarity": 0.410136
       },
       {
         "rank": 3,
@@ -40507,7 +40507,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.380318
+        "similarity": 0.380054
       },
       {
         "rank": 4,
@@ -40555,7 +40555,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.16058
+        "similarity": 0.160694
       },
       {
         "rank": 10,
@@ -40667,7 +40667,7 @@
         "task_number": "3.112",
         "group_id": "3_028",
         "group_pos": 4,
-        "similarity": 0.607141
+        "similarity": 0.631859
       },
       {
         "rank": 2,
@@ -40675,7 +40675,7 @@
         "task_number": "3.114",
         "group_id": "3_029",
         "group_pos": 2,
-        "similarity": 0.380318
+        "similarity": 0.380054
       },
       {
         "rank": 3,
@@ -40683,7 +40683,7 @@
         "task_number": "3.110",
         "group_id": "3_028",
         "group_pos": 2,
-        "similarity": 0.293421
+        "similarity": 0.290622
       },
       {
         "rank": 4,
@@ -40691,7 +40691,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.232325
+        "similarity": 0.262191
       },
       {
         "rank": 5,
@@ -40699,39 +40699,39 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.229427
+        "similarity": 0.258916
       },
       {
         "rank": 6,
-        "task_id": "task_0348",
-        "task_number": "3.1",
-        "group_id": "3_001",
-        "group_pos": 1,
-        "similarity": 0.225636
-      },
-      {
-        "rank": 7,
-        "task_id": "task_0350",
-        "task_number": "3.3",
-        "group_id": "3_001",
-        "group_pos": 3,
-        "similarity": 0.222819
-      },
-      {
-        "rank": 8,
         "task_id": "task_0455",
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.215492
+        "similarity": 0.245336
+      },
+      {
+        "rank": 7,
+        "task_id": "task_0348",
+        "task_number": "3.1",
+        "group_id": "3_001",
+        "group_pos": 1,
+        "similarity": 0.236856
+      },
+      {
+        "rank": 8,
+        "task_id": "task_0350",
+        "task_number": "3.3",
+        "group_id": "3_001",
+        "group_pos": 3,
+        "similarity": 0.233898
       },
       {
         "rank": 9,
-        "task_id": "task_0424",
-        "task_number": "3.77",
-        "group_id": "3_020",
-        "group_pos": 1,
-        "similarity": 0.200072
+        "task_id": "task_0453",
+        "task_number": "3.106",
+        "group_id": "3_027",
+        "group_pos": 2,
+        "similarity": 0.221316
       },
       {
         "rank": 10,
@@ -40739,7 +40739,7 @@
         "task_number": "3.201",
         "group_id": "3_050",
         "group_pos": 4,
-        "similarity": 0.198662
+        "similarity": 0.20027
       }
     ]
   },
@@ -40795,7 +40795,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.254375
+        "similarity": 0.254585
       },
       {
         "rank": 7,
@@ -40811,7 +40811,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.24772
+        "similarity": 0.247924
       },
       {
         "rank": 9,
@@ -40827,7 +40827,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.237753
+        "similarity": 0.237923
       }
     ]
   },
@@ -40979,7 +40979,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.256457
+        "similarity": 0.256669
       },
       {
         "rank": 8,
@@ -40987,7 +40987,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.249748
+        "similarity": 0.249953
       },
       {
         "rank": 9,
@@ -41147,23 +41147,23 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.223171
+        "similarity": 0.223329
       },
       {
         "rank": 7,
+        "task_id": "task_0454",
+        "task_number": "3.107",
+        "group_id": "3_027",
+        "group_pos": 3,
+        "similarity": 0.214342
+      },
+      {
+        "rank": 8,
         "task_id": "task_0466",
         "task_number": "3.119",
         "group_id": "3_030",
         "group_pos": 3,
         "similarity": 0.214255
-      },
-      {
-        "rank": 8,
-        "task_id": "task_0454",
-        "task_number": "3.107",
-        "group_id": "3_027",
-        "group_pos": 3,
-        "similarity": 0.214194
       },
       {
         "rank": 9,
@@ -41483,7 +41483,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.326452
+        "similarity": 0.326683
       },
       {
         "rank": 5,
@@ -41491,7 +41491,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.30539
+        "similarity": 0.305601
       },
       {
         "rank": 6,
@@ -41499,7 +41499,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.266937
+        "similarity": 0.267128
       },
       {
         "rank": 7,
@@ -41683,7 +41683,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.206584
+        "similarity": 0.20673
       },
       {
         "rank": 8,
@@ -42747,7 +42747,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.218523
+        "similarity": 0.218588
       },
       {
         "rank": 9,
@@ -42763,7 +42763,7 @@
         "task_number": "3.3",
         "group_id": "3_001",
         "group_pos": 3,
-        "similarity": 0.209105
+        "similarity": 0.20915
       }
     ]
   },
@@ -43171,7 +43171,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.225874
+        "similarity": 0.226034
       },
       {
         "rank": 7,
@@ -43179,7 +43179,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.223056
+        "similarity": 0.223211
       },
       {
         "rank": 8,
@@ -43195,7 +43195,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.211794
+        "similarity": 0.211946
       },
       {
         "rank": 10,
@@ -43339,7 +43339,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.23041
+        "similarity": 0.230573
       },
       {
         "rank": 6,
@@ -43363,7 +43363,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.217457
+        "similarity": 0.217608
       },
       {
         "rank": 9,
@@ -47331,7 +47331,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.163916
+        "similarity": 0.164123
       },
       {
         "rank": 10,
@@ -47395,7 +47395,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.207937
+        "similarity": 0.208199
       },
       {
         "rank": 7,
@@ -47427,7 +47427,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.158738
+        "similarity": 0.158851
       }
     ]
   },
@@ -47483,7 +47483,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.139025
+        "similarity": 0.139067
       },
       {
         "rank": 7,
@@ -47667,7 +47667,7 @@
         "task_number": "3.69",
         "group_id": "3_018",
         "group_pos": 1,
-        "similarity": 0.042562
+        "similarity": 0.042597
       },
       {
         "rank": 8,
@@ -47675,7 +47675,7 @@
         "task_number": "3.65",
         "group_id": "3_017",
         "group_pos": 1,
-        "similarity": 0.042404
+        "similarity": 0.042439
       },
       {
         "rank": 9,
@@ -47867,7 +47867,7 @@
         "task_number": "3.2",
         "group_id": "3_001",
         "group_pos": 2,
-        "similarity": 0.137212
+        "similarity": 0.137253
       }
     ]
   },
@@ -48171,7 +48171,7 @@
         "task_number": "3.105",
         "group_id": "3_027",
         "group_pos": 1,
-        "similarity": 0.22922
+        "similarity": 0.229383
       },
       {
         "rank": 5,
@@ -48187,7 +48187,7 @@
         "task_number": "3.107",
         "group_id": "3_027",
         "group_pos": 3,
-        "similarity": 0.214553
+        "similarity": 0.214702
       },
       {
         "rank": 7,
@@ -48211,7 +48211,7 @@
         "task_number": "3.116",
         "group_id": "3_029",
         "group_pos": 4,
-        "similarity": 0.198662
+        "similarity": 0.20027
       },
       {
         "rank": 10,
@@ -48371,7 +48371,7 @@
         "task_number": "3.106",
         "group_id": "3_027",
         "group_pos": 2,
-        "similarity": 0.147401
+        "similarity": 0.147587
       },
       {
         "rank": 8,
@@ -48387,7 +48387,7 @@
         "task_number": "3.108",
         "group_id": "3_027",
         "group_pos": 4,
-        "similarity": 0.141161
+        "similarity": 0.141262
       },
       {
         "rank": 10,

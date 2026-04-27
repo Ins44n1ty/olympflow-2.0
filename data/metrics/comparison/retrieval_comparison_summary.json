@@ -14,7 +14,7 @@
       "hit@10": 0.9271978021978022
     },
     "dense": {
-      "hit@1": 0.6923076923076923,
+      "hit@1": 0.6909340659340659,
       "hit@3": 0.8708791208791209,
       "hit@5": 0.8942307692307693,
       "hit@10": 0.9326923076923077
@@ -31,7 +31,7 @@
       "method_left": "tfidf",
       "method_right": "dense",
       "k": 1,
-      "mean_jaccard": 0.7568681318681318
+      "mean_jaccard": 0.7582417582417582
     },
     {
       "method_left": "tfidf",
@@ -43,13 +43,13 @@
       "method_left": "tfidf",
       "method_right": "dense",
       "k": 5,
-      "mean_jaccard": 0.4636806645735217
+      "mean_jaccard": 0.4633590615733473
     },
     {
       "method_left": "tfidf",
       "method_right": "dense",
       "k": 10,
-      "mean_jaccard": 0.3777184693984612
+      "mean_jaccard": 0.3781111106239538
     },
     {
       "method_left": "tfidf",
@@ -67,47 +67,47 @@
       "method_left": "tfidf",
       "method_right": "bm25",
       "k": 5,
-      "mean_jaccard": 0.6096884266527124
+      "mean_jaccard": 0.6103425344496772
     },
     {
       "method_left": "tfidf",
       "method_right": "bm25",
       "k": 10,
-      "mean_jaccard": 0.5558506058869666
+      "mean_jaccard": 0.5556744999416299
     },
     {
       "method_left": "dense",
       "method_right": "bm25",
       "k": 1,
-      "mean_jaccard": 0.7774725274725275
+      "mean_jaccard": 0.7788461538461539
     },
     {
       "method_left": "dense",
       "method_right": "bm25",
       "k": 3,
-      "mean_jaccard": 0.6946428571428571
+      "mean_jaccard": 0.6942307692307692
     },
     {
       "method_left": "dense",
       "method_right": "bm25",
       "k": 5,
-      "mean_jaccard": 0.4925595238095238
+      "mean_jaccard": 0.4922706261991976
     },
     {
       "method_left": "dense",
       "method_right": "bm25",
       "k": 10,
-      "mean_jaccard": 0.42138145708723734
+      "mean_jaccard": 0.4213701359907514
     }
   ],
   "case_counts": {
     "bm25_wins_over_dense": 37,
-    "dense_wins_over_bm25": 12,
+    "dense_wins_over_bm25": 11,
     "tfidf_wins_over_dense": 29,
-    "dense_wins_over_tfidf": 23,
+    "dense_wins_over_tfidf": 22,
     "bm25_wins_over_tfidf": 25,
     "tfidf_wins_over_bm25": 6,
-    "all_fail": 182,
+    "all_fail": 183,
     "all_hit": 480
   }
 }
