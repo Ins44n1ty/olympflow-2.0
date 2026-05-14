@@ -238,7 +238,7 @@ def plot_topic_year_heatmap(topic_results: list[dict]) -> None:
     selected = [
         item
         for item in topic_results
-        if item["years_count"] >= 2
+        if item["years_count"] >= 2 and item["topic"] != "неоднозначная тема"
     ][:20]
 
     if not selected:
