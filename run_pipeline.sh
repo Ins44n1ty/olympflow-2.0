@@ -46,6 +46,7 @@ if [ "$MODE" = "full" ]; then
     run scripts/05_clustering/compare_clustering_results.py
     run scripts/05_clustering/evaluate_cluster_consistency.py
     run scripts/05_clustering/interpret_clusters.py
+    run scripts/05_clustering/visualize_clusters_2d.py
 
     run scripts/05_clustering/analyze_cluster_quality.py
     run scripts/05_clustering/analyze_cluster_temporal_dynamics.py
@@ -70,6 +71,7 @@ elif [ "$MODE" = "analysis" ]; then
     run scripts/05_clustering/compare_clustering_results.py
     run scripts/05_clustering/evaluate_cluster_consistency.py
     run scripts/05_clustering/interpret_clusters.py
+    run scripts/05_clustering/visualize_clusters_2d.py
 
     run scripts/05_clustering/analyze_cluster_quality.py
     run scripts/05_clustering/analyze_cluster_temporal_dynamics.py

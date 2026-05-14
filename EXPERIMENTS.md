@@ -178,6 +178,20 @@ OpenAI dense embeddings были построены через:
 - `data/clusters/tfidf_clustering/tfidf_svd_agglomerative/`
 - `reports/clustering/clustering_comparison.md`
 
+## 2D cluster visualizations
+
+Для основных clustering variants были построены 2D-проекции через PCA и t-SNE. Цвет точки соответствует cluster id. Эти визуализации нужны не как строгая метрика качества, а как быстрый способ посмотреть, появляются ли в пространстве признаков локальные “облачка” похожих задач.
+
+Основные файлы:
+
+- `reports/clustering/tfidf_svd_kmeans_clusters_pca.png`
+- `reports/clustering/tfidf_svd_kmeans_clusters_tsne.png`
+- `reports/clustering/tfidf_svd_agglomerative_clusters_pca.png`
+- `reports/clustering/tfidf_svd_agglomerative_clusters_tsne.png`
+- `reports/clustering/dense_agglomerative_clusters_pca.png`
+- `reports/clustering/dense_agglomerative_clusters_tsne.png`
+- `reports/clustering/cluster_2d_visualizations.md`
+
 ## Cluster consistency
 
 Для лучшего варианта `tfidf_svd_kmeans` была проверена устойчивость к разным random seeds и подвыборкам.

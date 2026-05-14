@@ -128,6 +128,15 @@ Dense embeddings не превзошли sparse baselines. При этом эт�
 - `data/clusters/sparse_clustering_summary.json`
 - `data/clusters/tfidf_clustering/tfidf_svd_kmeans/`
 
+Для кластеров также были построены 2D-визуализации через PCA и t-SNE. Эти графики не используются как строгая метрика качества, но помогают визуально проверить, образуют ли задачи отдельные локальные группы в пространстве признаков.
+
+Основные файлы:
+
+- `reports/clustering/tfidf_svd_kmeans_clusters_tsne.png`
+- `reports/clustering/tfidf_svd_agglomerative_clusters_tsne.png`
+- `reports/clustering/dense_agglomerative_clusters_tsne.png`
+- `reports/clustering/cluster_2d_visualizations.md`
+
 ## 6. Устойчивость кластеризации
 
 Для лучшего варианта `tfidf_svd_kmeans` была проведена проверка устойчивости. Смысл этой проверки простой: нужно понять, получились ли кластеры действительно из-за структуры данных, или это случайный результат одного конкретного запуска алгоритма.
