@@ -1,0 +1,59 @@
+{
+  "dense_agglomerative": {
+    "source_path": "data/clusters/best_dense_agglomerative/records_with_clusters.jsonl",
+    "records_count": 728,
+    "cluster_count": 183,
+    "analyzed_cluster_count": 135,
+    "flagged_cluster_count": 16,
+    "largest_cluster_size": 9,
+    "cluster_size_distribution": {
+      "1": 4,
+      "2": 32,
+      "3": 12,
+      "4": 99,
+      "5": 9,
+      "6": 14,
+      "7": 6,
+      "8": 6,
+      "9": 1
+    }
+  },
+  "tfidf_svd_kmeans": {
+    "source_path": "data/clusters/tfidf_clustering/tfidf_svd_kmeans/records_with_clusters.jsonl",
+    "records_count": 728,
+    "cluster_count": 183,
+    "analyzed_cluster_count": 144,
+    "flagged_cluster_count": 5,
+    "largest_cluster_size": 10,
+    "cluster_size_distribution": {
+      "2": 23,
+      "3": 16,
+      "4": 117,
+      "5": 12,
+      "6": 8,
+      "7": 2,
+      "8": 3,
+      "10": 2
+    }
+  },
+  "tfidf_svd_agglomerative": {
+    "source_path": "data/clusters/tfidf_clustering/tfidf_svd_agglomerative/records_with_clusters.jsonl",
+    "records_count": 728,
+    "cluster_count": 183,
+    "analyzed_cluster_count": 140,
+    "flagged_cluster_count": 6,
+    "largest_cluster_size": 10,
+    "cluster_size_distribution": {
+      "1": 5,
+      "2": 31,
+      "3": 7,
+      "4": 110,
+      "5": 7,
+      "6": 11,
+      "7": 1,
+      "8": 8,
+      "9": 2,
+      "10": 1
+    }
+  }
+}

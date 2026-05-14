@@ -219,6 +219,100 @@ OpenAI dense embeddings были построены через:
 - `reports/clustering/cluster_consistency_nmi_heatmap.png`
 - `reports/clustering/cluster_size_distribution.png`
 
+## Cluster quality analysis
+
+Был добавлен отдельный анализ кластеров размера `>= 4`.
+
+Цель этого анализа — проверить, насколько крупные кластеры выглядят адекватно с точки зрения weak labels, годов и разделов. Для кластеров размера `4` основная sanity check-идея такая: если кластер действительно соответствует локальной группе задач, то задачи часто должны быть из одного года. Для кластеров размера `> 4` важнее понять, является ли кластер содержательным повторяющимся шаблоном или слишком широкой смесью разных тем.
+
+Анализ проводился для трёх основных clustering variants:
+
+| method | records | clusters | clusters size >= 4 | flagged clusters | largest cluster |
+|---|---:|---:|---:|---:|---:|
+| dense_agglomerative | 728 | 183 | 135 | 16 | 9 |
+| tfidf_svd_kmeans | 728 | 183 | 144 | 5 | 10 |
+| tfidf_svd_agglomerative | 728 | 183 | 140 | 6 | 10 |
+
+Главный вывод: `tfidf_svd_kmeans` выглядит наиболее аккуратно среди сравниваемых методов по числу flagged clusters. У него больше кластеров размера `>= 4`, но при этом заметно меньше подозрительных кластеров, чем у dense agglomerative.
+
+Важно, что flagged cluster не означает автоматически плохой кластер. Это только сигнал, что кластер стоит проверить вручную. Например, большой кластер может быть хорошим, если он собирает повторяющийся физический шаблон из разных лет.
+
+Основные файлы:
+
+- `reports/clustering/cluster_quality_analysis.md`
+- `reports/clustering/dense_agglomerative_cluster_quality_analysis.md`
+- `reports/clustering/tfidf_svd_kmeans_cluster_quality_analysis.md`
+- `reports/clustering/tfidf_svd_agglomerative_cluster_quality_analysis.md`
+- `reports/clustering/dense_agglomerative_cluster_size_distribution.png`
+- `reports/clustering/tfidf_svd_kmeans_cluster_size_distribution.png`
+- `reports/clustering/tfidf_svd_agglomerative_cluster_size_distribution.png`
+- `data/clusters/cluster_quality/cluster_quality_summary.json`
+
+## Cluster temporal dynamics
+
+Для кластеров размера `> 4` был добавлен отдельный анализ временной динамики.
+
+Цель — понять, как повторяются похожие задачи во времени:
+
+- `one_year`: все задачи в кластере из одного года;
+- `one_time_burst`: задачи сосредоточены в узком интервале соседних лет;
+- `multi_year`: задачи встречаются в нескольких годах без явной периодичности;
+- `recurring`: задачи распределены по более широкому временному интервалу;
+- `periodic_candidate`: годы идут почти с регулярными промежутками.
+
+Результаты:
+
+| method | large clusters | one_year | one_time_burst | multi_year | recurring | periodic_candidate | unknown |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| dense_agglomerative | 36 | 3 | 6 | 25 | 1 | 0 | 1 |
+| tfidf_svd_kmeans | 27 | 6 | 7 | 13 | 0 | 1 | 0 |
+| tfidf_svd_agglomerative | 30 | 4 | 10 | 15 | 1 | 0 | 0 |
+
+Главный вывод: большая часть крупных кластеров не является строго периодической. Чаще встречается либо одноразовая концентрация похожих задач в одном или соседних годах, либо более широкое multi-year повторение похожего шаблона.
+
+`tfidf_svd_kmeans` снова выглядит наиболее аккуратно: у него меньше крупных кластеров, больше `one_year` случаев и нет `unknown`. Это согласуется с предыдущими clustering-метриками и quality analysis.
+
+Основные файлы:
+
+- `reports/clustering/cluster_temporal_dynamics.md`
+- `reports/clustering/dense_agglomerative_cluster_temporal_dynamics.md`
+- `reports/clustering/tfidf_svd_kmeans_cluster_temporal_dynamics.md`
+- `reports/clustering/tfidf_svd_agglomerative_cluster_temporal_dynamics.md`
+- `reports/clustering/dense_agglomerative_cluster_year_span_distribution.png`
+- `reports/clustering/tfidf_svd_kmeans_cluster_year_span_distribution.png`
+- `reports/clustering/tfidf_svd_agglomerative_cluster_year_span_distribution.png`
+- `data/clusters/temporal_dynamics/cluster_temporal_dynamics_summary.json`
+
+### Topic-level temporal dynamics
+
+Так как отдельные кластеры обычно небольшие, строгую периодичность внутри одного кластера найти трудно. Поэтому дополнительно был проведён topic-level temporal analysis: задачи агрегируются не по отдельным кластерам, а по автоматически интерпретированным темам из `tfidf_svd_kmeans`.
+
+На этом уровне временная динамика становится заметнее: многие физические темы возвращаются в разные годы и покрывают длинный временной интервал.
+
+| topic | tasks | clusters | years | first year | last year | span | pattern |
+|---|---:|---:|---:|---:|---:|---:|---|
+| геометрическая оптика | 104 | 26 | 13 | 1991 | 2004 | 13 | long_term_recurring |
+| электростатика | 95 | 24 | 13 | 1992 | 2004 | 12 | long_term_recurring |
+| термодинамика | 89 | 22 | 12 | 1991 | 2003 | 12 | long_term_recurring |
+| механика: движение и силы | 68 | 17 | 11 | 1991 | 2004 | 13 | long_term_recurring |
+| электрические цепи | 54 | 15 | 11 | 1991 | 2003 | 12 | long_term_recurring |
+| колебания и пружины | 44 | 11 | 10 | 1992 | 2004 | 12 | long_term_recurring |
+| орбитальное движение и гравитация | 31 | 9 | 6 | 1991 | 2003 | 12 | long_term_recurring |
+| гидростатика | 25 | 7 | 6 | 1992 | 2004 | 12 | long_term_recurring |
+| магнетизм и электромагнитная индукция | 16 | 5 | 5 | 1993 | 2004 | 11 | recurring |
+| механика: импульс и столкновения | 14 | 4 | 3 | 1993 | 2004 | 11 | multi_year |
+
+Главный вывод: строгой периодичности на уровне отдельных кластеров почти не видно, потому что кластеры маленькие. Однако на уровне автоматически интерпретированных тем повторяемость проявляется хорошо: оптика, электростатика, термодинамика, механика, электрические цепи, колебания и гравитационные задачи возвращаются на протяжении большого промежутка лет.
+
+Это означает, что корпус имеет выраженную долгосрочную тематическую структуру: конкретные формулировки и локальные шаблоны меняются, но крупные физические темы регулярно возвращаются.
+
+Основные файлы:
+
+- `reports/clustering/topic_temporal_dynamics.md`
+- `reports/clustering/topic_year_coverage.png`
+- `reports/clustering/topic_year_heatmap.png`
+- `data/clusters/temporal_dynamics/topic_temporal_dynamics.json`
+
 ## Cluster interpretation
 
 Для лучшего варианта `tfidf_svd_kmeans` была добавлена автоматическая интерпретация кластеров.
@@ -255,6 +349,7 @@ OpenAI dense embeddings были построены через:
 6. Кластеризация устойчива к random seed и подвыборкам.
 7. Автоматическая интерпретация кластеров показывает, что многие кластеры имеют понятную физическую тематику.
 8. Метрики относительно weak labels нужно трактовать осторожно: weak labels являются локальными pseudo-labels, а не ручной semantic gold standard.
+9. На уровне отдельных кластеров строгая периодичность почти не проявляется, но topic-level temporal analysis показывает долгосрочную повторяемость крупных физических тем: оптики, электростатики, термодинамики, механики, электрических цепей, колебаний и гравитационных задач.
 
 ## What these results mean
 

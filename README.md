@@ -161,22 +161,6 @@ OPENAI_USE_PROXY=...
 ./run_pipeline.sh analysis
 ```
 
-## Async API usage
-
-Асинхронность используется в API-этапах проекта:
-
-- `scripts/02_ocr/run_mistral_ocr.py` — асинхронный OCR страниц через Mistral API;
-- `scripts/04_embeddings/build_dense_embeddings.py` — асинхронное построение dense embeddings;
-- `scripts/04_embeddings/build_openai_embeddings.py` — асинхронное построение OpenAI dense embeddings.
-
-Скрипты используют:
-
-- `asyncio`;
-- `httpx`;
-- batched API requests;
-- ограничение числа одновременных запросов;
-- retry-логику для временных ошибок и rate limits.
-
 ## Технологии
 
 - Python 3.12
